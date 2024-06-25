@@ -1,6 +1,6 @@
 export const skill = [
     {
-        img: "",
+        img: "..",
         lazy: "",
         name: "",
         skill: "",
