@@ -78,6 +78,19 @@ export const BackgroundColorCardStyled = styled.div`
         position: relative;
         filter: blur(2rem);
     }
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: var(--skills-skill-background-before-color);
+        opacity: .65;
+        border-radius: .8rem;  
+    }
 `;
 
 export const InfoCardStyled = styled.div`

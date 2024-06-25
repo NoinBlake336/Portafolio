@@ -1,5 +1,6 @@
 import React from 'react'
-import { ContainerSectionSkillStyled, ContainerSkillStyled, ContainerTitleSkillStyled } from './SkillContainerStyled'
+import { ContainerSectionSkillStyled, ContainerSkillStyled, ContainerTitleSkillStyled } from './SkillContainerStyled';
+import SkillCard from './SkillCard';
 
 const SkillContainer = () => {
   return (
@@ -14,7 +15,7 @@ const SkillContainer = () => {
             </svg>
         </ContainerTitleSkillStyled>
         <ContainerSkillStyled>
-            {/* AGREGAR LOS ITEMS DE SKILL */}
+            
         </ContainerSkillStyled>
     </ContainerSectionSkillStyled>
   )
