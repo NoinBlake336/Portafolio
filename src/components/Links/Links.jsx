@@ -4,11 +4,9 @@ import ItemNavBar from '../NavBar/ItemNavBar'
 import { MdGTranslate } from "react-icons/md";
 
 const Links = () => {
-
   return (
     <ContainerItemsStyled>
-    <ItemNavBar 
-        link={"https://github.com/NoinBlake336"}
+    <ItemNavBar
         title={"Translate"}
         svg={<MdGTranslate />}
     />
@@ -20,6 +18,7 @@ const Links = () => {
         }
     />
     <ItemNavBar 
+        
         link={"https://github.com/NoinBlake336"}
         title={"Github"}
         svg={<svg viewBox="0 0 256 250" width="256" height="250" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icon">

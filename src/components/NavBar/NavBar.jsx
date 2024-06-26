@@ -11,6 +11,7 @@ const NavBar = () => {
     const toggleMobileMenu = () => {
         setOpenMobileMenu(!openMobileMenu);
     }
+    
   return (
     <HeaderContainerStyled>
         <ContainerLogoStyled>
