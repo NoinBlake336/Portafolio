@@ -1,6 +1,8 @@
 import React from 'react'
 import { ContainerSectionSkillStyled, ContainerSkillStyled, ContainerTitleSkillStyled } from './SkillContainerStyled';
 import SkillCard from './SkillCard';
+import { skillData } from '../../data/skill';
+import NeonDots from '../Animations/NeonDots/NeonDots';
 
 const SkillContainer = () => {
   return (
@@ -15,8 +17,13 @@ const SkillContainer = () => {
             </svg>
         </ContainerTitleSkillStyled>
         <ContainerSkillStyled>
-            
+            {
+              skillData.map((skill)=>{
+                return <SkillCard img={skill.img} lazy={skill.lazy} name={skill.name} skill={skill.skill} colorData={skill.color} key={skill.id} />
+              })
+            }
         </ContainerSkillStyled>
+        <NeonDots />
     </ContainerSectionSkillStyled>
   )
 }

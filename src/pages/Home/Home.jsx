@@ -1,13 +1,15 @@
 import React from 'react'
 import { ButtonStyled, ContainerButtonsStyled, ContainerIconDownStyled, ContainerSectionStyled, SectionPrincipalStyled } from './HomeStyled'
 import SkillContainer from '../../components/SkillContainer/SkillContainer'
+import Circle from '../../components/Animations/Circle/Circle'
+import AboutMeContainer from '../../components/AboutMeContainer/AboutMeContainer'
 
 
 
 const Home = () => {
   return (
     <main>
-
+      <Circle/>
       <div>
         <ContainerSectionStyled>
           <SectionPrincipalStyled>
@@ -44,6 +46,7 @@ const Home = () => {
           </ContainerIconDownStyled>
         </ContainerSectionStyled>
         <SkillContainer />
+        <AboutMeContainer />
       </div>
     </main>
   )

@@ -1,182 +1,99 @@
-export const skill = [
+import LogoMongo from '../assets/mg.svg';
+export const skillData = [
     {
-        img: "..",
-        lazy: "",
-        name: "",
-        skill: "",
-    }
+        id:1,
+        img: require("../assets/js.png"),
+        lazy: require("../assets/js.png"),
+        name: "JavaScript",
+        skill: "Back-end / Front-end",
+        color: '#373025'
+    },
+    {
+        id:2,
+        img: require("../assets/ts.png"),
+        lazy: require("../assets/ts.png"),
+        name: "TypeScript",
+        skill: "Back-end / Front-end",
+        color: '#1e2c31'
+    },
+    {
+        id:3,
+        img: require("../assets/html.png"),
+        lazy: require("../assets/html.png"),
+        name: "HTML",
+        skill: "Front-end",
+        color:'#352622'
+    },
+    {
+        id:4,
+        img: require("../assets/CSS.png"),
+        lazy: require("../assets/CSS.png"),
+        name: "CSS",
+        skill: "Front-end",
+        color:'#1f2d38'
+    },
+    {
+        id:5,
+        img: require("../assets/node.png"),
+        lazy: require("../assets/node.png"),
+        name: "NodeJs",
+        skill: "Skill",
+        color: '#182612'
+    },
+    {
+        id:6,
+        img: require("../assets/ex.png"),
+        lazy: require("../assets/ex.png"),
+        name: "ExpressJs",
+        skill: "Back-end",
+        color:'#ababab'
+    },
+    {
+        id:7,
+        img: require("../assets/njs.png"),
+        lazy: require("../assets/njs.png"),
+        name: "NestJs",
+        skill: "Back-end",
+        color:'#2a0a10',
+    },
+    {
+        id:8,
+        img: LogoMongo,
+        lazy: LogoMongo,
+        name: "MongoDB",
+        skill: "DataBase",
+        color:'#161d0e'
+    },
+    {
+        id:9,
+        img: require('../assets/my.png'),
+        lazy: require('../assets/my.png'),
+        name: "MySQL",
+        skill: "DataBase",
+        color:'#111b25'
+    },
+    {
+        id:10,
+        img: require('../assets/Td.png'),
+        lazy: require('../assets/Td.png'),
+        name: "TailwindCSS",
+        skill: "Front-end",
+        color:'#111a23'
+    },
+    {
+        id:11,
+        img: require('../assets/gt.png'),
+        lazy: require('../assets/gt.png'),
+        name: "GitHub",
+        skill: "Tools",
+        color:'#ffffff'
+    },
+    {
+        id:12,
+        img: require('../assets/il.png'),
+        lazy: require('../assets/il.png'),
+        name: "Adobe illustrator",
+        skill: "Tools",
+        color:'#7b3800'
+    },
 ]
-
-<div id="skills">
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="JavaScript" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/js.png" src="./views/img/png">
-                        </div>
-                        <header class="header">
-                            <img alt="JavaScript" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" src="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fjs.webp&amp;w=96&amp;q=75">
-                            <div class="info">
-                                <span class="name">JavaScript</span>
-                                <span class="type">Back-end / Front-end</span>
-                            </div>
-                        </header>
-    
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="TypeScript" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/ts.png" src="./views/img/ts.png">
-                        </div>
-                        <header class="header">
-                            <img alt="TypeScript" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fts.webp&amp;w=96&amp;q=75" src="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fts.webp&amp;w=96&amp;q=75">
-                            <div class="info">
-                                <span class="name">TypeScript</span>
-                                <span class="type">Back-end / Front-end</span>
-                            </div>
-                        </header>
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="HTML" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/html.png" src="./views/img/html.png">
-                        </div>
-                        <header class="header">
-                            <img alt="HTML" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fhtml.webp&amp;w=96&amp;q=75" src="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fhtml.webp&amp;w=96&amp;q=75">
-                            <div class="info">
-                                <span class="name">HTML</span>
-                                <span class="type">Front-end</span>
-                            </div>
-                        </header>
-    
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="CSS" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/CSS.png" src="./views/img/CSS.png">
-                        </div>
-                        <header class="header">
-                            <img alt="CSS" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fcss.webp&amp;w=96&amp;q=75" src="https://eddydevv.vercel.app/_next/image?url=%2Fskills%2Fcss.webp&amp;w=96&amp;q=75">
-                            <div class="info">
-                                <span class="name">CSS</span>
-                                <span class="type">Front-end</span>
-                            </div>
-                        </header>
-    
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="NodeJS" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/node.png" src="./views/img/node.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#182612] rounded-lg">
-                                <img class="z-20" alt="NodeJS" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/node.png" src="./views/img/node.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">NodeJs</span>
-                                <span class="type">Software</span>
-                            </div>
-                        </header>
-    
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="ExpressJs" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/ex.png" src="./views/img/ex.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#ababab] rounded-lg">
-                                <img class="z-20" alt="ExpressJs" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/ex.png" src="./views/img/ex.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">ExpressJs</span>
-                                <span class="type">Back-end</span>
-                            </div>
-                        </header>
-    
-                    </article>
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="NestJs" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/njs.png" src="./views/img/njs.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#2a0a10] rounded-lg">
-                                <img class="z-20" alt="NestJs" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/njs.png" src="./views/img/njs.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">NestJs</span>
-                                <span class="type">Back-end</span>
-                            </div>
-                        </header>
-    
-                    </article>
-    
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="MongoDB" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/mg.svg" src="./views/img/mg.svg">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#161d0e] rounded-lg">
-                                <img class="z-20" alt="MongoDB" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/mg.svg" src="./views/img/mg.svg">
-                            </figure>
-                            <div class="info">
-                                <span class="name">MongoDB</span>
-                                <span class="type">Database</span>
-                            </div>
-                        </header>
-                    </article>
-    
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="Mysql" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/my.png" src="./views/img/my.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#111a23] rounded-lg">
-                                <img class="z-20" alt="Mysql" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/my.png" src="./views/img/my.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">Mysql</span>
-                                <span class="type">Database</span>
-                            </div>
-                        </header>
-                    </article>
-    
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="TailwindCSS" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/Td.png" src="./views/img/Td.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#111a23] rounded-lg">
-                                <img class="z-20" alt="TailwindCSS" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/Td.png" src="./views/img/Td.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">TailwindCSS</span>
-                                <span class="type">Front-end</span>
-                            </div>
-                        </header>
-                    </article>
-    
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="GitHub" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/gt.png" src="./views/img/gt.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-white rounded-lg">
-                                <img class="z-20" alt="GitHub" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/gt.png" src="./views/img/gt.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">GitHub</span>
-                                <span class="type">Tools</span>
-                            </div>
-                        </header>
-                    </article>
-    
-                    <article class="skill">
-                        <div class="bg">
-                            <img alt="Adobe Illustrator" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" class="img" style="color:transparent" srcset="./views/img/il.png" src="./views/img/il.png">
-                        </div>
-                        <header class="header">
-                            <figure class="flex justify-center items-center w-[70px] h-[70px] bg-[#7b3800] rounded-lg">
-                                <img class="z-20" alt="Adobe Illustrator" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" srcset="./views/img/il.png" src="./views/img/il.png">
-                            </figure>
-                            <div class="info">
-                                <span class="name">Adobe Illustrator</span>
-                                <span class="type">Tools</span>
-                            </div>
-                        </header>
-                    </article>
-                </div>

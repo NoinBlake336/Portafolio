@@ -106,6 +106,7 @@ export const ItemsNavbarStyled = styled.a`
 
 
 export const MobileMenuStyled = styled.div`
+    margin-left: 1rem;
     position: relative;
     display: none;
     @media screen and (max-width: 780px){

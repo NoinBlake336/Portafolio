@@ -127,3 +127,18 @@ export const InfoCardStyled = styled.div`
     }
     
 `; 
+
+export const FigureColorStyled = styled.figure`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: ${({colorsData})=> `${colorsData}`};
+    border-radius: 0.5rem;
+    img {
+        height: 2.5rem;
+        object-fit: contain;
+        border-radius:.5rem;
+    }
+`;
