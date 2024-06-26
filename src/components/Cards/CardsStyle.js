@@ -120,6 +120,7 @@ export const CardImageStyled = styled.div`
 
 export const CardInfromationStyled = styled.div`
     h5 {
+        margin-top: .5rem;
         margin-bottom: 0.5rem;
         font-size: 1.125rem;
         line-height: 1.75rem;

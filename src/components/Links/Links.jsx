@@ -1,12 +1,17 @@
 import React from 'react'
 import {  ContainerItemsStyled } from '../NavBar/NavBarStyled'
 import ItemNavBar from '../NavBar/ItemNavBar'
-
+import { MdGTranslate } from "react-icons/md";
 
 const Links = () => {
 
   return (
     <ContainerItemsStyled>
+    <ItemNavBar 
+        link={"https://github.com/NoinBlake336"}
+        title={"Translate"}
+        svg={<MdGTranslate />}
+    />
     <ItemNavBar 
         link={"https://www.linkedin.com/in/josé-luis-chocobar-140a0027b"}
         title={"Linkedin"}
