@@ -14,9 +14,7 @@ const Routes = () => {
                 <Route path='projects' element={<Projects/>} />
             </ReactDomRouter>
         </Layout>
-        <Footer>
-
-        </Footer>
+        <Footer/>
     </BrowserRouter>
   )
 }

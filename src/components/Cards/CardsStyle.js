@@ -1,9 +1,69 @@
-import styled from "styled-components";
+import { keyframes, styled } from 'styled-components';
+
+const pulseAnimation = ()=> keyframes`
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 21px -9px var(--text-accent);
+  }
+
+  10% {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 21px -9px var(--text-accent);
+
+  }
+
+
+
+  30% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 21px -9px var(--text-accent);
+
+  }
+
+
+
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 21px -9px var(--text-accent);
+  }
+`;
+
 
 export const  SectionCardsStyled = styled.section`
+    margin-top: 4rem;
     width: 100%;
     margin: 0 auto;
     padding: 0 .5rem;
+    @media (max-width: 1024px) {
+        display: flex;
+        width: 900px;
+        max-width: 1024px;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 768px) {
+        max-width: 768px;
+        padding: 0;
+    }
+    @media (max-width: 640px) {
+        max-width: 640px;
+    }
 `;
 
 export const ContainerCardsStyled = styled.section`
@@ -15,12 +75,19 @@ export const ContainerCardsStyled = styled.section`
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.5rem;
     }
+    @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 `;
 
 export const CardProjectStyled = styled.a`
+    padding: .7rem;
     max-width: 24rem;
     background-color: #141313;
     border-radius: 0.75rem;
+    cursor: pointer;
+    animation: ${pulseAnimation()} 6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+
 `;
 
 export const CardImageStyled = styled.div`
@@ -45,8 +112,9 @@ export const CardImageStyled = styled.div`
         color: rgb(241 245 249 / 1);
     }
     img {
-        max-width: 100%;
+        width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 `; 
 

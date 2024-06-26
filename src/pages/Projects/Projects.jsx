@@ -2,7 +2,9 @@ import React from 'react'
 import { ContainerMain } from './ProjectStyled'
 import Title from '../../components/Title/Title'
 import Cards from '../../components/Cards/Cards'
-
+import { MdPalette } from "react-icons/md";
+import { designs, projectsData } from '../../data/projects';
+import NeonDots from '../../components/Animations/NeonDots/NeonDots'
 const Projects = () => {
   return (
     <ContainerMain>
@@ -15,9 +17,12 @@ const Projects = () => {
                 <path d="M14 4l-4 16"></path>
               </svg>
       }/>
-      <Cards />
-      
-
+      <Cards cardlist={projectsData}/>
+      <Title 
+        title={'Diseños'} 
+        icon={ <MdPalette/> }/>
+      <Cards cardlist={designs}/>
+      <NeonDots/>
     </ContainerMain>
   )
 }

@@ -117,7 +117,7 @@ export const MobileMenuStyled = styled.div`
 export const ButtonMenuStyled = styled.button`
     padding: .35rem;
     background-color: var(--header-action-background-color);
-    border: .1rem solid var(--header-action-color);
+    border: .15rem solid var(--header-action-color);
     border-radius: .5rem;
     padding: .45rem;
     color: var(--header-action-text-color);

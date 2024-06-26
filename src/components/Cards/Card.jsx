@@ -6,7 +6,7 @@ const Card = ({category,title, img, description, items}) => {
     <CardProjectStyled>
         <CardImageStyled>
             <span>{ category }</span>
-            <img src={img} alt="" />
+            <img src={img} alt={title} />
         </CardImageStyled>
         <CardInfromationStyled>
             <h5>{ title }</h5>
@@ -15,7 +15,7 @@ const Card = ({category,title, img, description, items}) => {
                 {
                     items.map((skill) => {
                         return <SkillItemsStyle>
-                            <img src={skill} alt="" />
+                            <img src={skill} alt={ category } />
                         </SkillItemsStyle>
                     })
                 }
