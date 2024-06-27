@@ -19,6 +19,7 @@ const pulseAnimation = keyframes`
 // Styled component con la animación aplicada
 export const ContainerCVStyled = styled.a`
     position: fixed;
+    z-index: 90;
     bottom: 5rem;
     right: 2rem;
     width: 3.5rem;
