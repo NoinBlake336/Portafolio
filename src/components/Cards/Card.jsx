@@ -1,9 +1,9 @@
 import React from 'react'
 import { CardImageStyled, CardInfromationStyled, CardProjectStyled, SkillItemsStyle, UlSkillContainerStyle } from './CardsStyle'
 
-const Card = ({category,title, img, description, items}) => {
+const Card = ({link,category,title, img, description, items}) => {
   return (
-    <CardProjectStyled>
+    <CardProjectStyled href={link}>
         <CardImageStyled>
             <span>{ category }</span>
             <img src={img} alt={title} />

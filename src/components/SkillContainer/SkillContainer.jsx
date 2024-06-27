@@ -3,12 +3,19 @@ import { ContainerSectionSkillStyled, ContainerSkillStyled, ContainerTitleSkillS
 import SkillCard from './SkillCard';
 import { skillData } from '../../data/skill';
 import NeonDots from '../Animations/NeonDots/NeonDots';
+import { useTranslate } from '../../context/Translate';
 
 const SkillContainer = () => {
+  const {isTranslate} = useTranslate();
   return (
     <ContainerSectionSkillStyled>
         <ContainerTitleSkillStyled>
-            <span class="text">Habilidades &amp; Herramientas</span>
+            {isTranslate 
+              ?
+                <span class="text">Skills & Tools</span>
+              : 
+                <span class="text">Habilidades &amp; Herramientas</span>
+            }
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M7 8l-4 4l4 4"></path>

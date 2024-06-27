@@ -8,7 +8,7 @@ const Cards = ({cardlist}) => {
         <ContainerCardsStyled>
           {
             cardlist.map((card)=>{
-              return <Card  category={card.span} img={card.img} title={card.title} description={card.description} items={card.skills} />
+              return <Card link={card.link}  category={card.span} img={card.img} title={card.title} description={card.description} items={card.skills} />
             })
             
           } 

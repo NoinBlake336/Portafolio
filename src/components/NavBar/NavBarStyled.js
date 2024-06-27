@@ -104,6 +104,24 @@ export const ItemsNavbarStyled = styled.a`
     }
 `;
 
+export const ItemNavBarStyledTranslate = styled.a`
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+    svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        color: ${({selectedColor})=> selectedColor ? 'var(--text-accent);' : 'var(--header-link-color);' };
+        transition: color .15s ease;
+    }
+`;
+
+
 
 export const MobileMenuStyled = styled.div`
     margin-left: 1rem;

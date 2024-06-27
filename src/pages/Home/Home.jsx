@@ -3,20 +3,29 @@ import { ButtonStyled, ContainerButtonsStyled, ContainerIconDownStyled, Containe
 import SkillContainer from '../../components/SkillContainer/SkillContainer'
 import Circle from '../../components/Animations/Circle/Circle'
 import AboutMeContainer from '../../components/AboutMeContainer/AboutMeContainer'
-
+import {useTranslate} from '../../context/Translate'
 
 
 const Home = () => {
+  const {isTranslate} = useTranslate()
   return (
     <main>
       <Circle/>
       <div>
         <ContainerSectionStyled>
           <SectionPrincipalStyled>
-            <p class="welcome" id="welcome">Bienvenido...</p>
-            <p class="content">Me llamo José <span class="resalted">Chocobar</span></p>
-            <p class="message"><span class="resalted">Soy desarrollador backend y diseñador gráfico</span> apasionado, que ha estado inmerso en el mundo de la programación durante los últimos <span class="resalted">tres</span> años. Mi camino comenzó con un <span class="resalted">espíritu autodidacta</span>, impulsado por la curiosidad y el deseo de aprender.</p>
-            <p class="message">Soy de Córdoba, Argentina.</p>
+                {
+                  isTranslate 
+                  ?  
+                  (<> <p class="welcome" id="welcome">Welcome...</p><p class="content">My name is José <span class="resalted">Chocobar</span></p><p class="message"><span class="resalted">I am a passionate backend developer and graphic designer</span> who has been immersed in the world of programming for the past <span class="resalted">three</span> years. My journey began with a <span class="resalted">self-taught spirit</span>, driven by curiosity and the desire to learn.</p><p class="message">I am from Córdoba, Argentina.</p> </>)
+                  : 
+                  (<>
+                    <p class="welcome" id="welcome">Bienvenido...</p>
+                    <p class="content">Me llamo José <span class="resalted">Chocobar</span></p>
+                    <p class="message"><span class="resalted">Soy desarrollador backend y diseñador gráfico</span> apasionado, que ha estado inmerso en el mundo de la programación durante los últimos <span class="resalted">tres</span> años. Mi camino comenzó con un <span class="resalted">espíritu autodidacta</span>, impulsado por la curiosidad y el deseo de aprender.</p>
+                    <p class="message">Soy de Córdoba, Argentina.</p>
+                  </>)
+                }
             <ContainerButtonsStyled>
               <ButtonStyled href='mailto:josechocobar336@gmail.com'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
@@ -25,7 +34,10 @@ const Home = () => {
                     </path>
                     <path d="M3 7l9 6l9 -6"></path>
                 </svg>
-                <span class="text">Contáctame</span>
+                {
+                  isTranslate ? <span class="text">Contact me</span>
+                  : <span class="text">Contáctame</span>
+                }
               </ButtonStyled>
               <ButtonStyled href='https://github.com/NoinBlake336'>
                   <svg viewBox="0 0 256 250" width="256" height="250" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="icon small">

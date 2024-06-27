@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import Links from '../Links/Links'
 import MobileMenu from './MobileMenu'
+import { useTranslate } from '../../context/Translate'
 
 const NavBar = () => {
     const navigate = useNavigate();
@@ -11,17 +12,21 @@ const NavBar = () => {
     const toggleMobileMenu = () => {
         setOpenMobileMenu(!openMobileMenu);
     }
-    
+    const { isTranslate } = useTranslate()
   return (
     <HeaderContainerStyled>
         <ContainerLogoStyled>
             <Logo />
             <NavigateContainerStyled>
                 <ItemsStyled onClick={()=> navigate('/')}>
-                    <span>Inicio</span>
+                    {
+                       isTranslate ? <span>Home</span> : <span>Inicio</span> 
+                    }
                 </ItemsStyled>
                 <ItemsStyled onClick={()=> navigate('/projects')}>
-                    <span>Proyectos</span>
+                    {
+                        isTranslate ? <span>Projects</span> : <span>Proyectos</span>
+                    }
                 </ItemsStyled>   
             </NavigateContainerStyled>
         </ContainerLogoStyled>

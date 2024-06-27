@@ -1,15 +1,21 @@
-import React from 'react'
-import {  ContainerItemsStyled } from '../NavBar/NavBarStyled'
+import React, { useState } from 'react'
+import {  ContainerItemsStyled, ItemNavBarStyledTranslate } from '../NavBar/NavBarStyled'
 import ItemNavBar from '../NavBar/ItemNavBar'
 import { MdGTranslate } from "react-icons/md";
+import { useTranslate } from '../../context/Translate';
 
 const Links = () => {
+    const { toggleTranslate } = useTranslate();
+    const [isTranslate, setIsTranslate] = useState(false);
+    const handlerTranslateClick = () => {
+        setIsTranslate( prev => !prev );
+        toggleTranslate();
+    }
   return (
     <ContainerItemsStyled>
-    <ItemNavBar
-        title={"Translate"}
-        svg={<MdGTranslate />}
-    />
+    <ItemNavBarStyledTranslate title={"Translate"} onClick={handlerTranslateClick} selectedColor={isTranslate} >
+        <MdGTranslate />
+    </ItemNavBarStyledTranslate>
     <ItemNavBar 
         link={"https://www.linkedin.com/in/josé-luis-chocobar-140a0027b"}
         title={"Linkedin"}

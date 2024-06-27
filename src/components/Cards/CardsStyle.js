@@ -81,6 +81,7 @@ export const ContainerCardsStyled = styled.section`
 `;
 
 export const CardProjectStyled = styled.a`
+    text-decoration: none;
     padding: .7rem;
     max-width: 24rem;
     background-color: #141313;

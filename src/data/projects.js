@@ -1,13 +1,15 @@
 import LogoMongo from '../assets/mg.svg';
-export const projectsData = [
+export const projectsDataEs = [
     {
+        link:'https://documenter.getpostman.com/view/27924385/2sA3XY6Hx3',
         img: require('../assets/casaPlus.png'),
-        span: 'Backend | Frontend',
+        span: 'Backend',
         title: 'CASA PLUS | BAZAR',
-        description: 'Nuestra aplicación de ecommerce de bazar proporciona una plataforma completa y eficiente para la venta de productos variados, desde artículos de decoración hasta utensilios domésticos. Diseñada tanto para administradores como para usuarios finales, la aplicación se estructura en dos partes principales: un robusto panel de administración y una interfaz de usuario intuitiva.',
-        skills: [require('../assets/ts.png'),require('../assets/js.png'), require('../assets/js.png'),require('../assets/ts.png'),LogoMongo]
+        description: 'Nuestra aplicación backend está diseñada para gestionar eficientemente una tienda de bazar en línea, proporcionando una base sólida para las operaciones de comercio electrónico. Esta plataforma es robusta y flexible, permitiendo a los usuarios realizar diversas operaciones administrativas y de usuario final.',
+        skills: [require('../assets/ts.png'),require('../assets/js.png'), require('../assets/njs.png'),require('../assets/ts.png'),LogoMongo]
     },
     {
+        link:'https://www.ipetym69.edu.ar',
         img: require('../assets/projectOne.png'),
         span: 'Frontend',
         title: 'I.P.E.TyM N°69',
@@ -15,6 +17,7 @@ export const projectsData = [
         skills: [require('../assets/html.png'),require('../assets/js.png'), require('../assets/CSS.png')]
     },
     {
+        link:'https://ipetym69.onrender.com',
         img: require('../assets/projectBackendOne.png'),
         span: 'Backend',
         title: 'I.P.E.TyM N°69',
@@ -23,6 +26,7 @@ export const projectsData = [
     },
 
     {
+        link:'https://glam-haven.vercel.app/',
         img: require('../assets/projectsTwo.png'),
         span: 'Frontend',
         title: 'GLAM HAVEN',
@@ -31,6 +35,7 @@ export const projectsData = [
     },
 
     {
+        link:'https://chat-websocket-ryky.onrender.com',
         img: require('../assets/projectBackendTwo.png'),
         span: 'Backend',
         title: 'CHAT API',
@@ -39,6 +44,7 @@ export const projectsData = [
     },
 
     {
+        link:'https://api-weather-sepia.vercel.app',
         img: require('../assets/projectsThree.png'),
         span: 'Frontend',
         title: 'WEATHER APP',
@@ -47,8 +53,9 @@ export const projectsData = [
     },
 ] 
 
-export const designs = [
+export const designsEs = [
     {
+        link:'',
         img: require('../assets/design/piel.jpg'),
         span: 'Logo',
         title: 'PIEL MORENA',
@@ -56,6 +63,7 @@ export const designs = [
         skills: [require('../assets/il.png')]
     }, 
     {
+        link:'',
         img: require('../assets/design/tabicas (1).jpg'),
         span: 'Logo',
         title: 'TABITAS DORCAS',
@@ -63,6 +71,7 @@ export const designs = [
         skills: [require('../assets/il.png')]
     }, 
     {
+        link:'',
         img: require('../assets/design/tabicas (2).jpg'),
         span: 'Logo',
         title: 'TABITAS DORCAS',
@@ -70,10 +79,100 @@ export const designs = [
         skills: [require('../assets/il.png')]
     },
     {
+        link:'',
         img: require('../assets/design/portada-piel.jpg'),
         span: 'Cover',
         title: 'PIEL MORENA',
         description: 'El cover de Piel Morena transmite calidez y vitalidad con un diseño elegante que incorpora elementos naturales. Invita a explorar el bazar con una sensación acogedora y moderna.',
+        skills: [require('../assets/il.png')]
+    },
+]
+
+export const projectsDataEn = [
+    {
+        link:'https://documenter.getpostman.com/view/27924385/2sA3XY6Hx3',
+        img: require('../assets/casaPlus.png'),
+        span: 'Backend',
+        title: 'CASA PLUS | BAZAR',
+        description: 'Our backend application is designed to efficiently manage an online bazaar store, providing a solid foundation for e-commerce operations. This platform is robust and flexible, allowing users to perform various administrative and end-user operations.',
+        skills: [require('../assets/ts.png'),require('../assets/js.png'), require('../assets/njs.png'),require('../assets/ts.png'),LogoMongo]
+    },
+    {
+        link:'https://www.ipetym69.edu.ar',
+        img: require('../assets/projectOne.png'),
+        span: 'Frontend',
+        title: 'I.P.E.TyM N°69',
+        description: 'Ipetym69 provides administrators with a control panel to manage news and resources. With secure login and real-time updates, we keep everyone informed.',
+        skills: [require('../assets/html.png'),require('../assets/js.png'), require('../assets/CSS.png')]
+    },
+    {
+        link:'https://ipetym69.onrender.com',
+        img: require('../assets/projectBackendOne.png'),
+        span: 'Backend',
+        title: 'I.P.E.TyM N°69',
+        description: 'Our Ipetym69 backend provides a solid infrastructure for efficient news and resource management. With secure authentication features and well-defined APIs.',
+        skills: [require('../assets/node.png'),require('../assets/ex.png'), LogoMongo,require('../assets/ts.png')]
+    },
+
+    {
+        link:'https://glam-haven.vercel.app/',
+        img: require('../assets/projectsTwo.png'),
+        span: 'Frontend',
+        title: 'GLAM HAVEN',
+        description: 'Glam Haven is a frontend project that showcases a diverse selection of beauty products for makeup enthusiasts. With an intuitive interface, users can explore, compare, and add products to their shopping cart with ease, all in one place.',
+        skills: [require('../assets/html.png'),require('../assets/Td.png'),require('../assets/CSS.png'),require('../assets/js.png')]
+    },
+
+    {
+        link:'https://chat-websocket-ryky.onrender.com/',
+        img: require('../assets/projectBackendTwo.png'),
+        span: 'Backend',
+        title: 'CHAT API',
+        description: 'Chat API is a powerful backend tool that manages all the necessary information for a complete chat system. From storing chat messages to managing users and friend lists, Chat API provides a solid foundation for creating interactive and secure chat applications.',
+        skills: [require('../assets/node.png'),require('../assets/ex.png'),LogoMongo]
+    },
+
+    {
+        link:'https://api-weather-sepia.vercel.app',
+        img: require('../assets/projectsThree.png'),
+        span: 'Frontend',
+        title: 'WEATHER APP',
+        description: 'Weather App is a web page that provides updated weather information by fetching from a weather API. With an intuitive interface, users can search for the country of their choice and get real-time weather details.',
+        skills: [require('../assets/html.png'),require('../assets/CSS.png'),require('../assets/js.png')]
+    },
+] 
+
+export const designsEn = [
+    {
+        link:'',
+        img: require('../assets/design/piel.jpg'),
+        span: 'Logo',
+        title: 'PIEL MORENA',
+        description: 'The Piel Morena logo conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.',
+        skills: [require('../assets/il.png')]
+    }, 
+    {
+        link:'',
+        img: require('../assets/design/tabicas (1).jpg'),
+        span: 'Logo',
+        title: 'TABITAS DORCAS',
+        description: 'Tabicas Dorcas is a brand specializing in garment alterations and embroidery, where craftsmanship and attention to detail are essential.',
+        skills: [require('../assets/il.png')]
+    }, 
+    {
+        link:'',
+        img: require('../assets/design/tabicas (2).jpg'),
+        span: 'Logo',
+        title: 'TABITAS DORCAS',
+        description: 'Tabicas Dorcas is a brand specializing in garment alterations and embroidery, where craftsmanship and attention to detail are essential.',
+        skills: [require('../assets/il.png')]
+    },
+    {
+        link:'',
+        img: require('../assets/design/portada-piel.jpg'),
+        span: 'Cover',
+        title: 'PIEL MORENA',
+        description: 'The Piel Morena cover conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.',
         skills: [require('../assets/il.png')]
     },
 ]
