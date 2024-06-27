@@ -7,7 +7,7 @@ export const ContainerFooterStyled = styled.footer`
     height: 4.5rem;
     position: relative;
     bottom: 0;
-    z-index: 100;
+    z-index: 98;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -4,6 +4,7 @@ import SkillContainer from '../../components/SkillContainer/SkillContainer'
 import Circle from '../../components/Animations/Circle/Circle'
 import AboutMeContainer from '../../components/AboutMeContainer/AboutMeContainer'
 import {useTranslate} from '../../context/Translate'
+import CV from '../../components/CV/CV'
 
 
 const Home = () => {
@@ -60,6 +61,7 @@ const Home = () => {
         <SkillContainer />
         <AboutMeContainer />
       </div>
+      <CV/>
     </main>
   )
 }

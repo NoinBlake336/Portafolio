@@ -6,6 +6,7 @@ import { MdPalette } from "react-icons/md";
 import { designsEn, designsEs, projectsDataEn, projectsDataEs } from '../../data/projects';
 import NeonDots from '../../components/Animations/NeonDots/NeonDots';
 import {useTranslate} from '../../context/Translate';
+import PresentationCard from '../../components/Cards/PresentationCard/PresentationCard';
 const Projects = () => {
   const { isTranslate } = useTranslate()
   return (
@@ -25,7 +26,8 @@ const Projects = () => {
           <Cards cardlist={projectsDataEn}/>
           <Title 
             title={'Designs'} 
-            icon={ <MdPalette/> }/>
+            icon={ <MdPalette/> }
+            />
           <Cards cardlist={designsEn}/>
         </>)
         : (<>
@@ -37,7 +39,8 @@ const Projects = () => {
                     <path d="M17 8l4 4l-4 4"></path>
                     <path d="M14 4l-4 16"></path>
                   </svg>
-          }/>
+                }
+          />
           <Cards cardlist={projectsDataEs}/>
           <Title 
             title={'Diseños'} 
@@ -46,6 +49,7 @@ const Projects = () => {
         </>)
       }
       <NeonDots/>
+      <PresentationCard />
     </ContainerMain>
   )
 }

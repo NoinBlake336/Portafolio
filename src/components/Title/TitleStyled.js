@@ -6,6 +6,7 @@ export const ContainerTitleStyled = styled.header`
     justify-content: center;
     gap: .5rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     span {
         font-size: 2.5rem;
         font-weight: 500;

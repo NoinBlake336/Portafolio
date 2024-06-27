@@ -1,66 +1,31 @@
-import { keyframes, styled } from 'styled-components';
-
-const pulseAnimation = ()=> keyframes`
-  0% {
-    transform: scale(1);
-    box-shadow: 0px 0px 21px -9px var(--text-accent);
-  }
-
-  10% {
-    transform: scale(1.01);
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 21px -9px var(--text-accent);
-
-  }
+import { styled } from 'styled-components';
 
 
 
-  30% {
-    transform: scale(1.02);
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 21px -9px var(--text-accent);
 
-  }
-
-
-
-  50% {
-    transform: scale(1.01);
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
-  }
-
-
-
-  70% {
-    transform: scale(1.02);
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4);
-  }
-
-
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 0px 21px -9px var(--text-accent);
-  }
-`;
-
-
-export const  SectionCardsStyled = styled.section`
+export const SectionCardsStyled = styled.section`
     margin-top: 4rem;
     width: 100%;
     margin: 0 auto;
     padding: 0 .5rem;
-    @media (max-width: 1024px) {
+    
+    @media (min-width: 1025px) {
         display: flex;
-        width: 900px;
+        width: 100%;
         max-width: 1024px;
         justify-content: center;
         align-items: center;
     }
-    @media (max-width: 768px) {
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 900px;
+    }
+    
+    @media (min-width: 641px) and (max-width: 768px) {
         max-width: 768px;
         padding: 0;
     }
+    
     @media (max-width: 640px) {
         max-width: 640px;
     }
@@ -87,8 +52,7 @@ export const CardProjectStyled = styled.a`
     background-color: #141313;
     border-radius: 0.75rem;
     cursor: pointer;
-    animation: ${pulseAnimation()} 6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-
+    box-shadow: 0px 0px 21px -9px var(--text-accent);
 `;
 
 export const CardImageStyled = styled.div`

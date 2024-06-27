@@ -4,6 +4,7 @@ import { ContainerTitleSkillStyled } from '../SkillContainer/SkillContainerStyle
 import Text from '../Text/Text'
 import Profile from '../../assets/profile.png';
 import { useTranslate } from '../../context/Translate';
+import AboutProfile from './AboutProfile';
 const AboutMeContainer = () => {
     const { isTranslate } = useTranslate()
   return (
@@ -41,11 +42,7 @@ const AboutMeContainer = () => {
                         , I am determined to continue improving my backend skills and expanding my software development experience. My goal is to become an exceptional developer capable of creating innovative solutions that positively impact people's lives.
                         </Text>
                     </AboutMeContentStyled>
-                    <AboutMeFigureStyled>
-                        <ContianerImgStyled>
-                            <img src={Profile} alt="" />
-                        </ContianerImgStyled>
-                    </AboutMeFigureStyled>
+                    <AboutProfile img={Profile}/>
                 </ContainerAboutMeStyled>          
             </>)
             :
