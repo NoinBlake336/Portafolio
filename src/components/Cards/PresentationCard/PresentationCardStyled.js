@@ -16,7 +16,7 @@ export const CardContainerStyed = styled.div`
     border-radius: 0.75rem;
     margin-top: 2rem;
     width: 80%;
-    height: 80%;
+    max-height: 80%;
     background-color: var(--header-action-background-color);
     border: var(--text-accent) solid .15rem;
     display: flex;
@@ -26,7 +26,11 @@ export const CardContainerStyed = styled.div`
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 5% 47.5% 47.5%;
+        max-width: 100%;
+        height: 550px;
     }
+
+
 `;
 
 export const ItemsContianerStyled = styled.ul` 
@@ -88,5 +92,20 @@ export const PageInfromatinContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    padding-right: 2rem;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--text-accent);
+        border-radius: 20px;
+        border: 3px solid transparent;
+    }
 `;
 

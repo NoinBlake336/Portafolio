@@ -1,4 +1,3 @@
-// GlobalContext.js
 import React, { createContext, useState } from 'react';
 import { TranslateProvider } from './Translate';
 
