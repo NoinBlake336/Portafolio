@@ -4,7 +4,7 @@ import { CardImageStyled, CardInfromationStyled, CardProjectStyled, SkillItemsSt
 const Card = ({link,category,title, img, description, items}) => {
 
   return (
-    <CardProjectStyled href={link} onClick={(e)=>{console.log(e)}}>
+    <CardProjectStyled href={link} to={title}>
         <CardImageStyled>
             <span>{ category }</span>
             <img src={img} alt={title} />

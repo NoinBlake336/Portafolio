@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 
@@ -45,7 +46,7 @@ export const ContainerCardsStyled = styled.section`
     }
 `;
 
-export const CardProjectStyled = styled.a`
+export const CardProjectStyled = styled(Link)`
     text-decoration: none;
     padding: .7rem;
     max-width: 24rem;
