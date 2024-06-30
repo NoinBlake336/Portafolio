@@ -22,7 +22,7 @@ export const projectsDataEs = [
       "link": "https://ipetym69.onrender.com",
       "img": require("../assets/projectBackendOne.png"),
       "span": "Backend",
-      "title": "I.P.E.TyM N°69 (b)",
+      "title": "I.P.E.TyM N°69 2",
       "description": "Nuestro backend de Ipetym69 proporciona una sólida infraestructura para la gestión eficiente de noticias y recursos. Con funcionalidades de autenticación segura y APIs bien definidas.",
       "skills": [require("../assets/node.png"), require("../assets/ex.png"), LogoMongo, require("../assets/ts.png")],
       "skillsName": ["nodeJs", "express", "mongodb", "typescript"]
@@ -116,7 +116,7 @@ export const projectsDataEn = [
       "link": "https://ipetym69.onrender.com",
       "img": require("../assets/projectBackendOne.png"),
       "span": "Backend",
-      "title": "I.P.E.TyM N°69 (b)",
+      "title": "I.P.E.TyM N°69 2",
       "description": "Our Ipetym69 backend provides a solid infrastructure for efficient news and resource management. With secure authentication features and well-defined APIs.",
       "skills": [require("../assets/node.png"), require("../assets/ex.png"), LogoMongo, require("../assets/ts.png")],
       "skillsName": ["nodeJs", "express", "mongodb", "typescript"]
@@ -172,7 +172,7 @@ export const designsEn = [
       "link": "",
       "img": require("../assets/design/tabicas (2).jpg"),
       "span": "Logo",
-      "title": "TABITAS DORCAS (b)",
+      "title": "TABITAS DORCAS 2",
       "description": "Tabicas Dorcas is a brand specializing in garment alterations and embroidery, where craftsmanship and attention to detail are essential.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]
@@ -181,7 +181,7 @@ export const designsEn = [
       "link": "",
       "img": require("../assets/design/portada-piel.jpg"),
       "span": "Cover",
-      "title": "PIEL MORENA (b)",
+      "title": "PIEL MORENA 2",
       "description": "The Piel Morena cover conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]

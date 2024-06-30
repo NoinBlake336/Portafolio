@@ -6,12 +6,13 @@ import { MdPalette } from "react-icons/md";
 import { designsEn, designsEs, projectsDataEn, projectsDataEs } from '../../data/projects';
 import NeonDots from '../../components/Animations/NeonDots/NeonDots';
 import {useTranslate} from '../../context/Translate';
+
 const Projects = () => {
   const { isTranslate } = useTranslate()
   return (
     <ContainerMain>
       {
-        isTranslate 
+        isTranslate
         ? (<>
           <Title 
             title={'Projects'} 
@@ -28,6 +29,7 @@ const Projects = () => {
             icon={ <MdPalette/> }
             />
           <Cards cardlist={designsEn}/>
+
         </>)
         : (<>
           <Title 

@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom'
 import { useTranslate } from '../../context/Translate'
 import { designsEn, designsEs, projectsDataEn, projectsDataEs } from '../../data/projects';
 import { BlockquoteStyled, ContainerBlockquoteStyled, ContainerImgStyled, ContainerListOfSkillStyled, ContainerPageLinkStyled, ContainerProjectAboutStyled, SectionContainerProjectStyled, SkillProjectStyled } from './PorjectStyled';
-
+import NeonDots from '../../components/Animations/NeonDots/NeonDots'
+import Circle from '../../components/Animations/Circle/Circle';
 const Project = () => {
     const capitalizeFirstLetter = (str) => {
       return str.charAt(0).toUpperCase() + str.slice(1);
@@ -13,7 +14,6 @@ const Project = () => {
     const { project } = useParams();
 
     if(isTranslate){
-        console.log(isTranslate)
         designsEn.find(item => item.title === project ? object = item : false );
         projectsDataEn.find(item => item.title === project ? object = item : false );
     }else{
@@ -21,6 +21,7 @@ const Project = () => {
         designsEs.find(item => item.title === project ? object = item : false);
     }
     const { description, img, link, skills, skillsName, span, title } = object;
+    console.log(object)
   return (
     <SectionContainerProjectStyled>
       <ContainerImgStyled>
@@ -71,6 +72,7 @@ const Project = () => {
           }
         </BlockquoteStyled>
       </ContainerBlockquoteStyled>
+      <NeonDots/>
     </SectionContainerProjectStyled>
   )
 }

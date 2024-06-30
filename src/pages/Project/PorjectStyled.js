@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const SectionContainerProjectStyled = styled.section`
-    width: 100%;
+    width: 80%;
+    max-height: 100%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5rem;
     padding-left: .5rem;
     padding-right: .5rem;
+    background-color: var(--text-accents);
+    padding: 1rem;
+    border-radius: 0.15rem;
 
     @media (min-width: 1280px){
         padding-left: 7rem;
@@ -44,9 +49,6 @@ export const ContainerImgStyled = styled.header`
         align-items: center;
     }
     @media (min-width: 1024px){
-        display: flex;
-    }
-    @media (min-width: 1024px){
         margin-top: 7rem;
     }
     @media (min-width: 1024px){
@@ -64,8 +66,8 @@ export const ContainerImgStyled = styled.header`
         overflow-clip-margin: content-box;
         overflow: clip;
         box-shadow:1px 0px 23px 2px var(--landing-action-background-color) ;
-        @media (min-width: 1024px){
-            width: 33.333333%;
+        @media (min-width: 1024px) {
+            margin-bottom: 2rem ;
         }
     }
 `;
