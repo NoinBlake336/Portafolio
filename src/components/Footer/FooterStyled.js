@@ -12,6 +12,9 @@ export const ContainerFooterStyled = styled.footer`
     align-items: center;
     justify-content: space-between;
     transition: padding .25s ease;
+    -webkit-backdrop-filter: blur(1.5rem);
+  backdrop-filter: blur(1.5rem);
+  border-top: .1rem solid var(--header-border-color);
 `;
 
 export const PrincipalStyled = styled.section`

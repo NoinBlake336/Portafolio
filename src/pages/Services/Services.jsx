@@ -4,6 +4,8 @@ import { useTranslate } from '../../context/Translate'
 import Title from '../../components/Title/Title'
 import { ContainerP, SectionCardsServicesStyled } from './ServicesStyled'
 import PlansCard from '../../components/PlansCard/PlansCard'
+import FormBrand from '../../components/FormBrand/FormBrand'
+import NeonDots from '../../components/Animations/NeonDots/NeonDots'
 
 
 const Services = () => {
@@ -24,6 +26,8 @@ const Services = () => {
                 <SectionCardsServicesStyled>
                     <PlansCard/>
                 </SectionCardsServicesStyled>
+                <FormBrand/>
+
             </>)
             :
             (<>
@@ -37,8 +41,10 @@ const Services = () => {
                 <SectionCardsServicesStyled>
                     <PlansCard/>
                 </SectionCardsServicesStyled>
+                <FormBrand/>
             </>)
         }
+        <NeonDots/>
     </ContainerMain>
   )
 }

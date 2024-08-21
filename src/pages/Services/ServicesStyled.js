@@ -26,6 +26,10 @@ export const ContainerP = styled.div`
                 display: none;
             } */
         }
+        svg {
+            color: var(--text-accent);
+            width: 2rem;
+        }
     }
 `;
 
@@ -54,3 +58,4 @@ export const SectionCardsServicesStyled = styled.section`
         justify-content: center;
     }
 `;
+

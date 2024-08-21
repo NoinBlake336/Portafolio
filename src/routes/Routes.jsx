@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home'
 import Projects from '../pages/Projects/Projects'
 import Project from '../pages/Project/Project'
 import Services from '../pages/Services/Services'
+
 const Routes = () => {
   return (
     <BrowserRouter>
