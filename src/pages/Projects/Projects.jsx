@@ -46,7 +46,7 @@ const Projects = () => {
           <Title 
             title={'Diseños'} 
             icon={ <MdPalette/> }/>
-          <Cards cardlist={designsEs}/>
+          <Cards cardlist={designsEs} />
         </>)
       }
       <NeonDots/>

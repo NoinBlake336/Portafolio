@@ -1,8 +1,7 @@
 import React from 'react'
 import { ContainerTitleStyled } from './TitleStyled'
 
-const Title = ({title, icon}) => {
-
+const Title = ({title, icon }) => {
   return (
     <ContainerTitleStyled>
         <span>{title}</span>
@@ -10,5 +9,6 @@ const Title = ({title, icon}) => {
     </ContainerTitleStyled>
   )
 }
+
 
 export default Title

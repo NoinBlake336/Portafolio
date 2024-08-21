@@ -10,7 +10,7 @@ import CV from '../../components/CV/CV'
 const Home = () => {
   const {isTranslate} = useTranslate()
   return (
-    <main>
+    <main style={{paddingBottom:'1rem'}}>
       <Circle/>
       <div>
         <ContainerSectionStyled>

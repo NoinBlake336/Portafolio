@@ -5,7 +5,7 @@ export const ContainerFooterStyled = styled.footer`
     width: 100%;
     margin-top: 2rem;
     height: 4.5rem;
-    position: relative;
+    position: fixed;
     bottom: 0;
     z-index: 98;
     display: flex;
@@ -29,7 +29,7 @@ export const PrincipalStyled = styled.section`
 export const SpacerStyled = styled.div`
     height: .3rem;
     width: .3rem;
-    background-color: var(--header-spacer-color);
+    background-color: ${(color) => color.color};
     flex-shrink: 0;
     transition: transform .15s ease-in-out;
     border-radius: 50px;

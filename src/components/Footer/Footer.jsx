@@ -10,7 +10,7 @@ const Footer = () => {
     <ContainerFooterStyled>
         <PrincipalStyled>
             <Logo/>
-            <SpacerStyled />
+            <SpacerStyled color={'var(--header-spacer-color)'}/>
             <AllRigthReservationsStyled>
                 {
                   isTranslate 

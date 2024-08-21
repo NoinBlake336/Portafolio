@@ -27,6 +27,19 @@ const NavBar = () => {
                     {
                         isTranslate ? <span>Projects</span> : <span>Proyectos</span>
                     }
+                </ItemsStyled>
+                <ItemsStyled onClick={()=> navigate('/services')}>
+                    {
+                        isTranslate ? 
+                        <span>
+                            Services
+                        </span> 
+                        :
+                        <span>
+                            Servicios
+                        </span>
+                    }
+
                 </ItemsStyled>   
             </NavigateContainerStyled>
         </ContainerLogoStyled>

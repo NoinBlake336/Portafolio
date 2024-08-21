@@ -9,7 +9,7 @@ export const SectionCardsStyled = styled.section`
     width: 100%;
     margin: 0 auto;
     padding: 0 .5rem;
-    
+
     @media (min-width: 1025px) {
         display: flex;
         width: 100%;
