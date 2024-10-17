@@ -16,7 +16,7 @@ const Home = () => {
         <ContainerSectionStyled>
           <SectionPrincipalStyled>
                 {
-                  isTranslate 
+                  !isTranslate 
                   ?  
                   (<> <p class="welcome" id="welcome">Welcome...</p><p class="content">My name is José <span class="resalted">Chocobar</span></p><p class="message"><span class="resalted">I am a passionate backend developer and graphic designer</span> who has been immersed in the world of programming for the past <span class="resalted">three</span> years. My journey began with a <span class="resalted">self-taught spirit</span>, driven by curiosity and the desire to learn.</p><p class="message">I am from Córdoba, Argentina.</p> </>)
                   : 
@@ -36,7 +36,7 @@ const Home = () => {
                     <path d="M3 7l9 6l9 -6"></path>
                 </svg>
                 {
-                  isTranslate ? <span class="text">Contact me</span>
+                  !isTranslate ? <span class="text">Contact me</span>
                   : <span class="text">Contáctame</span>
                 }
               </ButtonStyled>

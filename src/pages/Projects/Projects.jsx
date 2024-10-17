@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <ContainerMain>
       {
-        isTranslate
+        !isTranslate
         ? (<>
           <Title 
             title={'Projects'} 
