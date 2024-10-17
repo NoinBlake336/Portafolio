@@ -95,9 +95,9 @@ export const designsEs = [
   ]
 export const projectsDataEn = [
     {
-      "link": "https://documenter.getpostman.com/view/27924385/2sA3XY6Hx3",
+      "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
-      "span": "Backend",
+      "span": "full stack",
       "title": "CASA PLUS | BAZAR",
       "description": "Our backend application is designed to efficiently manage an online bazaar store, providing a solid foundation for e-commerce operations. This platform is robust and flexible, allowing users to perform various administrative and end-user operations.",
       "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
