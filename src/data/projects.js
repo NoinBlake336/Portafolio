@@ -1,9 +1,9 @@
 import LogoMongo from '../assets/mg.svg';
 export const projectsDataEs = [
     {
-      "link": "https://documenter.getpostman.com/view/27924385/2sA3XY6Hx3",
+      "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
-      "span": "Backend",
+      "span": "Full stack",
       "title": "CASA PLUS | BAZAR",
       "description": "Nuestra aplicación backend está diseñada para gestionar eficientemente una tienda de bazar en línea, proporcionando una base sólida para las operaciones de comercio electrónico. Esta plataforma es robusta y flexible, permitiendo a los usuarios realizar diversas operaciones administrativas y de usuario final.",
       "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
