@@ -20,17 +20,17 @@ const NavBar = () => {
             <NavigateContainerStyled>
                 <ItemsStyled onClick={()=> navigate('/')}>
                     {
-                       isTranslate ? <span>Home</span> : <span>Inicio</span> 
+                       !isTranslate ? <span>Home</span> : <span>Inicio</span> 
                     }
                 </ItemsStyled>
                 <ItemsStyled onClick={()=> navigate('/projects')}>
                     {
-                        isTranslate ? <span>Projects</span> : <span>Proyectos</span>
+                        !isTranslate ? <span>Projects</span> : <span>Proyectos</span>
                     }
                 </ItemsStyled>
                 <ItemsStyled onClick={()=> navigate('/services')}>
                     {
-                        isTranslate ? 
+                        !isTranslate ? 
                         <span>
                             Services
                         </span> 
