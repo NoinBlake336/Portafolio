@@ -1,9 +1,9 @@
 import LogoMongo from '../assets/mg.svg';
-export const projectsDataEs = [
+export const projectsDataEn = [
     {
       "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
-      "span": "Full stack",
+      "span": "Full Stack",
       "title": "CASA PLUS | BAZAR",
       "description": "Nuestra aplicación backend está diseñada para gestionar eficientemente una tienda de bazar en línea, proporcionando una base sólida para las operaciones de comercio electrónico. Esta plataforma es robusta y flexible, permitiendo a los usuarios realizar diversas operaciones administrativas y de usuario final.",
       "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
@@ -12,20 +12,11 @@ export const projectsDataEs = [
     {
       "link": "https://www.ipetym69.edu.ar",
       "img": require("../assets/projectOne.png"),
-      "span": "Frontend",
+      "span": "Full Stack",
       "title": "I.P.E.TyM N°69",
       "description": "Ipetym69 proporciona a los directivos un panel de control para gestionar noticias y recursos. Con inicio de sesión seguro y actualización en tiempo real, mantenemos a todos informados.",
       "skills": [require("../assets/html.png"), require("../assets/js.png"), require("../assets/CSS.png")],
       "skillsName": ["html", "javascript", "css"]
-    },
-    {
-      "link": "https://ipetym69.onrender.com",
-      "img": require("../assets/projectBackendOne.png"),
-      "span": "Backend",
-      "title": "I.P.E.TyM N°69 2",
-      "description": "Nuestro backend de Ipetym69 proporciona una sólida infraestructura para la gestión eficiente de noticias y recursos. Con funcionalidades de autenticación segura y APIs bien definidas.",
-      "skills": [require("../assets/node.png"), require("../assets/ex.png"), LogoMongo, require("../assets/ts.png")],
-      "skillsName": ["nodeJs", "express", "mongodb", "typescript"]
     },
     {
       "link": "https://glam-haven.vercel.app/",
@@ -55,7 +46,7 @@ export const projectsDataEs = [
       "skillsName": ["html", "css", "javascript"]
     }
   ]
-export const designsEs = [
+export const designsEn = [
     {
       "link": "",
       "img": require("../assets/design/piel.jpg"),
@@ -93,7 +84,7 @@ export const designsEs = [
       "skillsName": ["illustrator"]
     }
   ]
-export const projectsDataEn = [
+export const projectsDataEs = [
     {
       "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
@@ -106,20 +97,11 @@ export const projectsDataEn = [
     {
       "link": "https://www.ipetym69.edu.ar",
       "img": require("../assets/projectOne.png"),
-      "span": "Frontend",
+      "span": "Full Stack",
       "title": "I.P.E.TyM N°69",
       "description": "Ipetym69 provides administrators with a control panel to manage news and resources. With secure login and real-time updates, we keep everyone informed.",
       "skills": [require("../assets/html.png"), require("../assets/js.png"), require("../assets/CSS.png")],
       "skillsName": ["html", "javascript", "css"]
-    },
-    {
-      "link": "https://ipetym69.onrender.com",
-      "img": require("../assets/projectBackendOne.png"),
-      "span": "Backend",
-      "title": "I.P.E.TyM N°69 2",
-      "description": "Our Ipetym69 backend provides a solid infrastructure for efficient news and resource management. With secure authentication features and well-defined APIs.",
-      "skills": [require("../assets/node.png"), require("../assets/ex.png"), LogoMongo, require("../assets/ts.png")],
-      "skillsName": ["nodeJs", "express", "mongodb", "typescript"]
     },
     {
       "link": "https://glam-haven.vercel.app/",
@@ -149,7 +131,7 @@ export const projectsDataEn = [
       "skillsName": ["html", "css", "javascript"]
     }
   ]
-export const designsEn = [
+export const designsEs = [
     {
       "link": "",
       "img": require("../assets/design/piel.jpg"),
