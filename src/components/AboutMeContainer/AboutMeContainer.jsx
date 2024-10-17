@@ -10,7 +10,7 @@ const AboutMeContainer = () => {
   return (
     <ContainerSectionStyled>
         {
-            isTranslate 
+            !isTranslate 
             ?
             (<>
                 <ContainerTitleSkillStyled>

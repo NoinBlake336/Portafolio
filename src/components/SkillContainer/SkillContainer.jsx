@@ -10,7 +10,7 @@ const SkillContainer = () => {
   return (
     <ContainerSectionSkillStyled>
         <ContainerTitleSkillStyled>
-            {isTranslate 
+            {!isTranslate 
               ?
                 <span class="text">Skills & Tools</span>
               : 
