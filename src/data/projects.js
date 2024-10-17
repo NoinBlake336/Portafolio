@@ -69,7 +69,7 @@ export const designsEn = [
       "link": "",
       "img": require("../assets/design/tabicas (2).jpg"),
       "span": "Logo",
-      "title": "TABITAS DORCAS",
+      "title": "TABITAS DORCAS 2",
       "description": "Tabicas Dorcas es una marca especializada en arreglos de prendas y bordados, donde la artesanía y la atención al detalle son fundamentales.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]
@@ -78,7 +78,7 @@ export const designsEn = [
       "link": "",
       "img": require("../assets/design/portada-piel.jpg"),
       "span": "Cover",
-      "title": "PIEL MORENA",
+      "title": "PIEL MORENA 2",
       "description": "El cover de Piel Morena transmite calidez y vitalidad con un diseño elegante que incorpora elementos naturales. Invita a explorar el bazar con una sensación acogedora y moderna.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]
