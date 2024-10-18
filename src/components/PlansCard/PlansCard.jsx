@@ -91,7 +91,7 @@ const plansData = {
 
 const PlansCard = () => {
   const { isTranslate } = useTranslate();
-  const currentLang = isTranslate ? 'en' : 'es';
+  const currentLang = !isTranslate ? 'en' : 'es';
   
   return (
     <PlansCardContainerStyled>

@@ -50,7 +50,7 @@ const formData = {
 
 const FormBrand = () => {
   const { isTranslate } = useTranslate();
-  const currentLang = isTranslate ? 'en' : 'es';
+  const currentLang = !isTranslate ? 'en' : 'es';
   const { title, description, note, whatsapp, inputs, imageUploadText, buttonText } = formData[currentLang];
 
   const [formValues, setFormValues] = useState({});
