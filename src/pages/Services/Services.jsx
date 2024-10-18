@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <ContainerMain>
         {
-            !isTranslate 
+            isTranslate 
             ? 
             (<>
                 <Title title={'Services'}
