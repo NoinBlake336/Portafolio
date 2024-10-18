@@ -12,10 +12,10 @@ const Projects = () => {
   return (
     <ContainerMain>
       {
-        !isTranslate
+        isTranslate
         ? (<>
           <Title 
-            title={'Projects'} 
+            title={'Projectos'} 
             icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M7 8l-4 4l4 4"></path>
@@ -25,7 +25,7 @@ const Projects = () => {
           }/>
           <Cards cardlist={projectsDataEn}/>
           <Title 
-            title={'Designs'} 
+            title={'Diseños'} 
             icon={ <MdPalette/> }
             />
           <Cards cardlist={designsEn}/>
@@ -33,7 +33,7 @@ const Projects = () => {
         </>)
         : (<>
           <Title 
-            title={'Proyectos'} 
+            title={'Proyects'} 
             icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M7 8l-4 4l4 4"></path>
@@ -44,7 +44,7 @@ const Projects = () => {
           />
           <Cards cardlist={projectsDataEs}/>
           <Title 
-            title={'Diseños'} 
+            title={'Designs'} 
             icon={ <MdPalette/> }/>
           <Cards cardlist={designsEs} />
         </>)
