@@ -23,11 +23,6 @@ const NavBar = () => {
                        !isTranslate ? <span>Home</span> : <span>Inicio</span> 
                     }
                 </ItemsStyled>
-                <ItemsStyled onClick={()=> navigate('/projects')}>
-                    {
-                        !isTranslate ? <span>Projects</span> : <span>Proyectos</span>
-                    }
-                </ItemsStyled>
                 <ItemsStyled onClick={()=> navigate('/services')}>
                     {
                         !isTranslate ? 

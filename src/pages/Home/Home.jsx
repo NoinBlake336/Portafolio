@@ -5,6 +5,7 @@ import Circle from '../../components/Animations/Circle/Circle'
 import AboutMeContainer from '../../components/AboutMeContainer/AboutMeContainer'
 import {useTranslate} from '../../context/Translate'
 import CV from '../../components/CV/CV'
+import Projects from '../Projects/Projects'
 
 
 const Home = () => {
@@ -58,6 +59,7 @@ const Home = () => {
               </svg>
           </ContainerIconDownStyled>
         </ContainerSectionStyled>
+        <Projects/>
         <SkillContainer />
         <AboutMeContainer />
       </div>

@@ -11,9 +11,9 @@ const Routes = () => {
     <BrowserRouter>
         <Layout>
             <ReactDomRouter>
-                <Route path='/' element={<Home />} />
-                <Route path='projects'>
-                  <Route index element={<Projects/>} />
+                
+                <Route path='/' >
+                  <Route index element={<Home />} />
                   <Route path=':project' element={<Project/>} />
                 </Route>
                 <Route path='services' element={<Services/>}>
