@@ -13,7 +13,7 @@ const Project = () => {
     const { isTranslate } = useTranslate();
     const { project } = useParams();
 
-    if(!isTranslate){
+    if(isTranslate){
         designsEn.find(item => item.title === project ? object = item : false );
         projectsDataEn.find(item => item.title === project ? object = item : false );
     }else{

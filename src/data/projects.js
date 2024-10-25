@@ -5,7 +5,7 @@ export const projectsDataEn = [
       "img": require("../assets/casaPlus.png"),
       "span": "Full Stack",
       "title": "CASA PLUS | BAZAR",
-      "description": "Nuestra aplicación backend está diseñada para gestionar eficientemente una tienda de bazar en línea, proporcionando una base sólida para las operaciones de comercio electrónico. Esta plataforma es robusta y flexible, permitiendo a los usuarios realizar diversas operaciones administrativas y de usuario final.",
+      "description": "La desmostración de este proyecto consiste en la presentación de una tienda online creada específicamente para Casa Plus, un local comercial dedicado a la venta de productos de bazar. Este sitio web está diseñado para facilitar la exhibición y venta de una amplia gama de artículos de bazar, que incluyen utensilios de cocina, decoración, artículos para el hogar, entre otros productos útiles para diversas tareas cotidianas.",
       "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
       "skillsName": ["typescript", "javascript", "nestjs", "mongodb"]
     },
@@ -90,7 +90,7 @@ export const projectsDataEs = [
       "img": require("../assets/casaPlus.png"),
       "span": "full stack",
       "title": "CASA PLUS | BAZAR",
-      "description": "Our backend application is designed to efficiently manage an online bazaar store, providing a solid foundation for e-commerce operations. This platform is robust and flexible, allowing users to perform various administrative and end-user operations.",
+      "description": "The demonstration of this project consists of the presentation of an online store created specifically for Casa Plus, a retail business dedicated to selling bazaar products. This website is designed to facilitate the display and sale of a wide variety of bazaar items, including kitchen utensils, decorations, household products, and other useful items for various daily tasks.",
       "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
       "skillsName": ["typescript", "javascript", "nestjs", "mongodb"]
     },
