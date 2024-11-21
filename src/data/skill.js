@@ -1,6 +1,14 @@
 import LogoMongo from '../assets/mg.svg';
 export const skillData = [
     {
+        id:0,
+        img: require("../assets/react.png"),
+        lazy: require("../assets/react.png"),
+        name: "ReactJs",
+        skill: "Front-end",
+        color: '#373025'
+    },
+    {
         id:1,
         img: require("../assets/js.png"),
         lazy: require("../assets/js.png"),

@@ -1,12 +1,21 @@
 import LogoMongo from '../assets/mg.svg';
 export const projectsDataEn = [
     {
+      "link": "https://radioamistad.vercel.app/",
+      "img": require("../assets/radioamistad.png"), // Imagen de ejemplo
+      "span": "Landing Page",
+      "title": "RADIO AMISTAD 88.5",
+      "description": "Radio Cita con la Vida es un sitio web diseñado para llevar la magia de la radio a cualquier dispositivo, desarrollado utilizando React, una de las tecnologías más avanzadas para la creación de interfaces web dinámicas y responsivas.",
+      "skills": [require("../assets/react.png"), require("../assets/js.png")], // Ejemplo de skills
+      "skillsName": ["react", "javascript"]
+    },
+    {
       "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
       "span": "Full Stack",
       "title": "CASA PLUS | BAZAR",
       "description": "La desmostración de este proyecto consiste en la presentación de una tienda online creada específicamente para Casa Plus, un local comercial dedicado a la venta de productos de bazar. Este sitio web está diseñado para facilitar la exhibición y venta de una amplia gama de artículos de bazar, que incluyen utensilios de cocina, decoración, artículos para el hogar, entre otros productos útiles para diversas tareas cotidianas.",
-      "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
+      "skills": [require("../assets/ts.png"), require("../assets/react.png"), require("../assets/njs.png"), LogoMongo],
       "skillsName": ["typescript", "javascript", "nestjs", "mongodb"]
     },
     {
@@ -21,7 +30,7 @@ export const projectsDataEn = [
     {
       "link": "https://glam-haven.vercel.app/",
       "img": require("../assets/projectsTwo.png"),
-      "span": "Frontend",
+      "span": "Landing Page",
       "title": "GLAM HAVEN",
       "description": "Glam Haven es un proyecto frontend que presenta una selección diversa de productos de belleza para entusiastas del maquillaje. Con una interfaz intuitiva, los usuarios pueden explorar, comparar y agregar productos al carrito de compras con facilidad, todo en un solo lugar.",
       "skills": [require("../assets/html.png"), require("../assets/Td.png"), require("../assets/CSS.png"), require("../assets/js.png")],
@@ -39,7 +48,7 @@ export const projectsDataEn = [
     {
       "link": "https://api-weather-sepia.vercel.app",
       "img": require("../assets/projectsThree.png"),
-      "span": "Frontend",
+      "span": "Landing Page",
       "title": "WEATHER APP",
       "description": "Weather App es una página web que proporciona información meteorológica actualizada al hacer fetch a una API de clima. Con una interfaz intuitiva, los usuarios pueden buscar el país de su elección y obtener detalles sobre el clima en tiempo real.",
       "skills": [require("../assets/html.png"), require("../assets/CSS.png"), require("../assets/js.png")],
@@ -86,12 +95,21 @@ export const designsEn = [
   ]
 export const projectsDataEs = [
     {
+      "link": "https://radioamistad.vercel.app/",
+      "img": require("../assets/radioamistad.png"), // Imagen de ejemplo
+      "span": "Landing Page",
+      "title": "RADIO AMISTAD 88.5",
+      "description": "Radio Cita con la Vida is a website designed to bring the magic of radio to any device, developed using React, one of the most advanced technologies for creating dynamic and responsive web interfaces.",
+      "skills": [require("../assets/react.png"), require("../assets/js.png")], // Ejemplo de skills
+      "skillsName": ["react", "javascript"]
+    },
+    {
       "link": "https://casa-plus-ok.com",
       "img": require("../assets/casaPlus.png"),
       "span": "full stack",
       "title": "CASA PLUS | BAZAR",
       "description": "The demonstration of this project consists of the presentation of an online store created specifically for Casa Plus, a retail business dedicated to selling bazaar products. This website is designed to facilitate the display and sale of a wide variety of bazaar items, including kitchen utensils, decorations, household products, and other useful items for various daily tasks.",
-      "skills": [require("../assets/ts.png"), require("../assets/js.png"), require("../assets/njs.png"), LogoMongo],
+      "skills": [require("../assets/ts.png"), require("../assets/react.png"), require("../assets/njs.png"), LogoMongo],
       "skillsName": ["typescript", "javascript", "nestjs", "mongodb"]
     },
     {
@@ -106,7 +124,7 @@ export const projectsDataEs = [
     {
       "link": "https://glam-haven.vercel.app/",
       "img": require("../assets/projectsTwo.png"),
-      "span": "Frontend",
+      "span": "Landing Page",
       "title": "GLAM HAVEN",
       "description": "Glam Haven is a frontend project that showcases a diverse selection of beauty products for makeup enthusiasts. With an intuitive interface, users can explore, compare, and add products to their shopping cart with ease, all in one place.",
       "skills": [require("../assets/html.png"), require("../assets/Td.png"), require("../assets/CSS.png"), require("../assets/js.png")],
@@ -124,7 +142,7 @@ export const projectsDataEs = [
     {
       "link": "https://api-weather-sepia.vercel.app",
       "img": require("../assets/projectsThree.png"),
-      "span": "Frontend",
+      "span": "Landing Page",
       "title": "WEATHER APP",
       "description": "Weather App is a web page that provides updated weather information by fetching from a weather API. With an intuitive interface, users can search for the country of their choice and get real-time weather details.",
       "skills": [require("../assets/html.png"), require("../assets/CSS.png"), require("../assets/js.png")],
