@@ -1,7 +1,16 @@
 import LogoMongo from '../assets/mg.svg';
 export const projectsDataEn = [
     {
-      "link": "https://radioamistad.vercel.app/",
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/mateosApartPage.png"), // Imagen de ejemplo
+      "span": "Landing Page",
+      "title": "MATEOS APART",
+      "description": "Mateos Apart es una plataforma diseñada para facilitar el alquiler de departamentos, ofreciendo una experiencia intuitiva y fluida para los usuarios. Desarrollada con React, garantiza una interfaz dinámica, moderna y adaptable a cualquier dispositivo, brindando comodidad y accesibilidad.",
+      "skills": [require("../assets/astro.png"), require("../assets/js.png")], // Ejemplo de skills
+      "skillsName": ["Astro"]
+    },  
+    {
+      "link": "https://citaconlavida.vercel.app/",
       "img": require("../assets/radioamistad.png"), // Imagen de ejemplo
       "span": "Landing Page",
       "title": "RADIO AMISTAD 88.5",
@@ -91,11 +100,61 @@ export const designsEn = [
       "description": "El cover de Piel Morena transmite calidez y vitalidad con un diseño elegante que incorpora elementos naturales. Invita a explorar el bazar con una sensación acogedora y moderna.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]
+    },
+    {
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/design/mateosApart(1).png"), // Cambia la ruta según corresponda
+      "span": "Logo",
+      "title": "Mateos Apart",
+      "description": "El logo de Mateos Apart representa la comodidad y elegancia de los departamentos en alquiler por noche. Con un diseño moderno y minimalista, evoca una sensación de tranquilidad y exclusividad para los huéspedes.",
+      "skills": [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "#c19e6a"
+    },
+    {
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/design/mateosApart(2).png"), // Cambia la ruta según corresponda
+      "span": "Logo",
+      "title": "Mateos Apart 2",
+      "description": "El logo de Mateos Apart representa la comodidad y elegancia de los departamentos en alquiler por noche. Con un diseño moderno y minimalista, evoca una sensación de tranquilidad y exclusividad para los huéspedes.",
+      "skills": [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "#c19e6a"
+    },
+    {
+      "link": "",
+      "img": require("../assets/design/Pintureria.png"), // Cambia la ruta según corresponda
+      "span": "Logo",
+      "title": "Gonzalez Pintura",
+      "description": "El logo de Gonzalez Pintura representa la calidad y profesionalismo en el servicio de pintura y decoración para casas residenciales. Con un diseño atractivo y representativo, transmite confianza y compromiso con el embellecimiento del hogar.",
+      "skills": [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "white"
+    },
+    {
+      "link": "",
+      "img": require("../assets/design/presentationCardGP.png"), // Cambia la ruta según corresponda
+      "span": "Carta de presentación",
+      "title": "Gonzalez Pintura 2",
+      "description": "El diseño de la carta de presentación de Gonzalez Pintura es moderno y profesional, resaltando su identidad visual. Usa colores armoniosos que transmiten confianza, con una tipografía clara y equilibrando texto e imagen para una comunicación efectiva. El logo destaca, reforzando la identidad de la marca.",
+      "skills": [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": ""
     }
+    
   ]
 export const projectsDataEs = [
     {
-      "link": "https://radioamistad.vercel.app/",
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/mateosApartPage.png"), // Imagen de ejemplo
+      "span": "Landing Page",
+      "title": "MATEOS APART",
+      "description": "Mateos Apart is a platform designed to facilitate apartment rentals, offering an intuitive and seamless experience for users. Developed with React, it ensures a dynamic, modern, and responsive interface, providing convenience and accessibility.",
+      "skills": [require("../assets/astro.png"), require("../assets/js.png")], // Ejemplo de skills
+      "skillsName": ["Astro"]
+    },  
+    {
+      "link": "https://citaconlavida.vercel.app/",
       "img": require("../assets/radioamistad.png"), // Imagen de ejemplo
       "span": "Landing Page",
       "title": "RADIO AMISTAD 88.5",
@@ -185,5 +244,45 @@ export const designsEs = [
       "description": "The Piel Morena cover conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.",
       "skills": [require("../assets/il.png")],
       "skillsName": ["illustrator"]
+    },{
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/design/mateosApart(1).png"), // Adjust the path as needed
+      "span": "Logo",
+      "title": "Mateos Apart",
+      "description": "The logo of Mateos Apart reflects the comfort and elegance of the apartments available for nightly rental. With a modern and minimalist design, it conveys a sense of tranquility and exclusivity for the guests.",
+      "skills": [require("../assets/il.png")], // Adjust if you use a different icon for Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "#c19e6a"
+    },
+    {
+      "link": "https://mateosapart.com/",
+      "img": require("../assets/design/mateosApart(2).png"), // Adjust the path as needed
+      "span": "Logo",
+      "title": "Mateos Apart 2" ,
+      "description": "The logo of Mateos Apart reflects the comfort and elegance of the apartments available for nightly rental. With a modern and minimalist design, it conveys a sense of tranquility and exclusivity for the guests.",
+      "skills": [require("../assets/il.png")], // Adjust if you use a different icon for Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "#c19e6a"
+    },
+    {
+      "link": "",
+      "img": require("../assets/design/Pintureria.png"), // Adjust the path accordingly
+      "span": "Logo",
+      "title": "Gonzalez Painting",
+      "description": "The Gonzalez Painting logo represents quality and professionalism in residential painting and decoration services. With an attractive and representative design, it conveys trust and commitment to enhancing the beauty of homes.",
+      "skills": [require("../assets/il.png")], // Change if using a different icon for Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "white"
+    },
+    {
+      "link": "",
+      "img": require("../assets/design/presentationCardGP.png"), // Adjust the path accordingly
+      "span": "Presentation Letter",
+      "title": "Gonzalez Painting 2",
+      "description": "The design of Gonzalez Painting’s presentation letter is modern and professional, highlighting its visual identity. It uses harmonious colors that convey trust, with clear typography and a balanced layout for effective communication. The logo stands out, reinforcing the brand’s identity.",
+      "skills": [require("../assets/il.png")], // Change if using a different icon for Illustrator
+      "skillsName": ["Illustrator"],
+      "bg": "whit"
     }
+    
   ]

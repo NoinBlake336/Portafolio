@@ -4,7 +4,6 @@ import { useTranslate } from '../../context/Translate'
 import { designsEn, designsEs, projectsDataEn, projectsDataEs } from '../../data/projects';
 import { BlockquoteStyled, ContainerBlockquoteStyled, ContainerImgStyled, ContainerListOfSkillStyled, ContainerPageLinkStyled, ContainerProjectAboutStyled, SectionContainerProjectStyled, SkillProjectStyled } from './PorjectStyled';
 import NeonDots from '../../components/Animations/NeonDots/NeonDots'
-import Circle from '../../components/Animations/Circle/Circle';
 const Project = () => {
     const capitalizeFirstLetter = (str) => {
       return str.charAt(0).toUpperCase() + str.slice(1);
@@ -20,11 +19,11 @@ const Project = () => {
         projectsDataEs.find(item => item.title === project ? object = item : false );
         designsEs.find(item => item.title === project ? object = item : false);
     }
-    const { description, img, link, skills, skillsName, span, title } = object;
-    
+    const { description, img, link, skills, skillsName, span, title, bg} = object;
+    console.log(bg)
   return (
     <SectionContainerProjectStyled>
-      <ContainerImgStyled>
+      <ContainerImgStyled bg={bg}>
         <img src={img} alt={title} sizes="(max-width: 768px) 600px, (max-width: 1200px) 800px, 960px" />
         <ContainerProjectAboutStyled>
           <h1>{ title }</h1>

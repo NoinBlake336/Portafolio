@@ -80,8 +80,10 @@ export const CardImageStyled = styled.div`
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: ${({ bg }) => (bg ? 'contain' : 'cover')};
     }
+    background-color: ${({ bg }) => (bg ? bg : 'transparent')};
+    
 `; 
 
 export const CardInfromationStyled = styled.div`

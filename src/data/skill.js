@@ -1,6 +1,14 @@
 import LogoMongo from '../assets/mg.svg';
 export const skillData = [
     {
+        id:13,
+        img: require("../assets/astro.png"),
+        lazy: require("../assets/astro.png"),
+        name: "AstroJs",
+        skill: "Front-end",
+        color: '#373025'
+    },
+    {
         id:0,
         img: require("../assets/react.png"),
         lazy: require("../assets/react.png"),

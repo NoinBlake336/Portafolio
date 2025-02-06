@@ -56,6 +56,7 @@ export const ContainerImgStyled = styled.header`
     }
 
     img {
+        background-color: ${({ bg }) => (bg ? bg : 'transparent')};
         border-radius: .5rem;
         width: 100%;
         height: auto;
