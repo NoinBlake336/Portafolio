@@ -210,6 +210,36 @@ export const designsEn = [
 ];
 export const projectsDataEs = [
   {
+    link: "", // if there's no domain yet, you can leave "#"
+    img: require("../assets/ketush.png"), // replace with the system screenshot
+    span: "ERP Management System",
+    title: "HARDWARE STORE SYSTEM",
+    description:
+      "System developed for the comprehensive management of a hardware store. It allows registering suppliers, uploading customized price lists, and defining profit margins per supplier. Based on this information, invoices can be generated quickly and efficiently. In addition, the system is integrated with ARCA (AFIP), enabling electronic invoicing and tax compliance.",
+    skills: [
+      require("../assets/njs.png"),
+      require("../assets/react.png"),
+      require("../assets/postgresql.png"),
+    ],
+    skillsName: ["NestJS", "React", "PostgreSQL", "ARCA (AFIP)"],
+  },
+
+  {
+    link: "https://bosquesrl.com/", // if there's no domain, you can leave it empty or use "#"
+    img: require("../assets/bosqueSrlSystem.png"), // replace with the system screenshot
+    span: "Management System",
+    title: "BOSQUE SRL",
+    description:
+      "BOSQUE SRL is an integrated system designed for managing a furniture company with multiple branches. It allows managing stock at each branch, registering sales and purchases, and handling employee roles. In addition, it includes a mobile application that simplifies the management of delivery notes with QR codes, inventory control, and real-time sales.",
+    skills: [
+      require("../assets/njs.png"),
+      require("../assets/react.png"),
+      require("../assets/postgresql.png"),
+    ],
+    skillsName: ["NestJS", "React", "PostgreSQL"],
+  },
+
+  {
     link: "https://mateosapart.com/",
     img: require("../assets/mateosApartPage.png"), // Imagen de ejemplo
     span: "Landing Page",
