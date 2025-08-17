@@ -1,13 +1,13 @@
-import React from 'react'
-import { ContainerCVStyled } from './CVStled'
+import React from "react";
+import { ContainerCVStyled } from "./CVStled";
 import { IoNewspaper } from "react-icons/io5";
-import curriculum from '../../assets/José Chocobar CV.pdf';
+import curriculum from "../../assets/Currículum Vitae José.C.pdf";
 const CV = () => {
   return (
     <ContainerCVStyled href={curriculum} download>
-        <IoNewspaper/>
+      <IoNewspaper />
     </ContainerCVStyled>
-  )
-}
+  );
+};
 
-export default CV
+export default CV;
