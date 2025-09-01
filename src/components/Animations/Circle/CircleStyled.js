@@ -1,23 +1,21 @@
-import styled,{keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const AnimationCircle = styled.div`
-    background: -webkit-linear-gradient(to left, #343435, #000000);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
+  background: -webkit-linear-gradient(to left, #343435, #000000);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
 `;
 
-
-
 export const UlContinaerCircleStyled = styled.ul`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
 `;
 
 const animate = keyframes`
@@ -33,92 +31,90 @@ const animate = keyframes`
     }
 `;
 
-
 // Estilo para cada círculo individual
 export const LiCircleStyled = styled.li`
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 0, 0, 0.77);
-    animation: ${animate} 25s linear infinite;
-    bottom: -150px;
-    filter: blur(0.3rem);
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  background: #feecb6;
+  animation: ${animate} 25s linear infinite;
+  bottom: -150px;
+  filter: blur(0.3rem);
 
-    &:nth-child(1) {
-        left: 25%;
-        width: 80px;
-        height: 80px;
-        animation-delay: 0s;
-    }
+  &:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
 
-    &:nth-child(2) {
-        left: 10%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 2s;
-        animation-duration: 12s;
-    }
+  &:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
 
-    &:nth-child(3) {
-        left: 70%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 4s;
-    }
+  &:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
 
-    &:nth-child(4) {
-        left: 40%;
-        width: 60px;
-        height: 60px;
-        animation-delay: 0s;
-        animation-duration: 18s;
-    }
+  &:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
 
-    &:nth-child(5) {
-        left: 65%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 0s;
-    }
+  &:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
 
-    &:nth-child(6) {
-        left: 75%;
-        width: 110px;
-        height: 110px;
-        animation-delay: 3s;
-    }
+  &:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+  }
 
-    &:nth-child(7) {
-        left: 35%;
-        width: 150px;
-        height: 150px;
-        animation-delay: 7s;
-    }
+  &:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+  }
 
-    &:nth-child(8) {
-        left: 50%;
-        width: 25px;
-        height: 25px;
-        animation-delay: 15s;
-        animation-duration: 45s;
-    }
+  &:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
 
-    &:nth-child(9) {
-        left: 20%;
-        width: 15px;
-        height: 15px;
-        animation-delay: 2s;
-        animation-duration: 35s;
-    }
+  &:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
 
-    &:nth-child(10) {
-        left: 85%;
-        width: 150px;
-        height: 150px;
-        animation-delay: 0s;
-        animation-duration: 11s;
-    }
+  &:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
 `;
-

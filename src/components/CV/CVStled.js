@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 // Define la animación de pulse utilizando keyframes
 const pulseAnimation = keyframes`
@@ -18,59 +18,59 @@ const pulseAnimation = keyframes`
 
 // Styled component con la animación aplicada
 export const ContainerCVStyled = styled.a`
-    position: fixed;
-    z-index: 90;
-    bottom: 5rem;
-    right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: white;
+  position: fixed;
+  z-index: 90;
+  bottom: 5rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Oculta el overflow de los elementos adicionales */
+  animation: ${pulseAnimation} 2s infinite; /* Aplica la animación pulse */
+  transition: transform 0.1s ease-in-out;
+
+  svg {
+    color: var(--fill);
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* Pseudoelemento para las rayitas */
+  &::before,
+  &::after {
+    content: "CV";
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Oculta el overflow de los elementos adicionales */
-    animation: ${pulseAnimation} 2s infinite; /* Aplica la animación pulse */
-    transition: transform 0.1s ease-in-out;
+    color: var(--text-accent);
+    border: 2px dashed var(--fill);
+    animation: animateCircle 2s infinite linear;
+  }
 
-    svg {
-        color: var(--text-accent);
-        text-align: center;
-        font-size: 2rem;
-    }
+  &::before {
+    animation-delay: -0.5s;
+  }
 
-    /* Pseudoelemento para las rayitas */
-    &::before,
-    &::after {
-        content: 'CV';
-        font-size: 1rem;
-        font-weight: bold;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        color: var(--text-accent);
-        border: 2px dashed rgba(255, 255, 255, 0.5);
-        animation: animateCircle 2s infinite linear;
+  @keyframes animateCircle {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
     }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
 
-    &::before {
-        animation-delay: -0.5s; 
-    }
-
-    @keyframes animateCircle {
-        0% {
-            transform: scale(0.5);
-            opacity: 1;
-        }
-        100% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-    }
-
-    &:hover {
-        animation: none;
-    }
+  &:hover {
+    animation: none;
+  }
 `;

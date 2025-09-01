@@ -22,8 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --text-accent: #ba2121;
-        --text-accent-2: #ff6b6b;
+        --fill: #00152b;
+        --text-accent: #feecb6;
+        --text-accent-2: #d7a859;
         --text-primary: #fff;
         --header-border-color: hsla(0, 0%, 100%, .2);
         --header-spacer-color: hsla(0, 0%, 100%, .1);
@@ -32,8 +33,8 @@ export const GlobalStyle = createGlobalStyle`
         --header-action-background-color: #391010;
         --header-action-color: #ff4040;
         --landing-message-color: #fff;
-        --landing-action-background-color: #391010;
-        --landing-action-color: #ff4040;
+        --landing-action-background-color: #7e643693;
+        --landing-action-color: #feecb6;
         --skills-skill-background-color: #100101;
         --skills-skill-background-before-color: #090808;
         --skills-skill-name-color: #fff;
