@@ -33,7 +33,11 @@ const MobileMenu = ({ isHidden }) => {
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
             </ButtonMobileMenuStyled>
-            <ButtonMobileMenuStyled onClick={() => navigate("/projects")}>
+            <ButtonMobileMenuStyled onClick={() => {
+              const el = document.getElementById("proyectos");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+              else navigate("/#proyectos");
+            }}>
               <span>Projects</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,15 +57,35 @@ const MobileMenu = ({ isHidden }) => {
                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
               </svg>
             </ButtonMobileMenuStyled>
-            {/* <ButtonMobileMenuStyled onClick={()=> navigate('/services')} >
-                        <span>Services</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="white" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
-                    </ButtonMobileMenuStyled>   */}
+            <ButtonMobileMenuStyled onClick={() => {
+              const el = document.getElementById("trayectoria");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+              else navigate("/#trayectoria");
+            }}>
+              <span>Services & Career</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                <path d="M15 19l2 2l4 -4"></path>
+              </svg>
+            </ButtonMobileMenuStyled>
           </>
         ) : (
           <>
             <ButtonMobileMenuStyled onClick={() => navigate("/")}>
-              <span>Incio</span>
+              <span>Inicio</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -78,10 +102,54 @@ const MobileMenu = ({ isHidden }) => {
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
               </svg>
             </ButtonMobileMenuStyled>
-            {/* <ButtonMobileMenuStyled onClick={()=> navigate('/services')} >
-                        <span>Servicios</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="white" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
-                    </ButtonMobileMenuStyled>                */}
+            <ButtonMobileMenuStyled onClick={() => {
+              const el = document.getElementById("proyectos");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+              else navigate("/#proyectos");
+            }}>
+              <span>Proyectos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-layout-dashboard icon"
+              >
+                <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+              </svg>
+            </ButtonMobileMenuStyled>
+            <ButtonMobileMenuStyled onClick={() => {
+              const el = document.getElementById("trayectoria");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+              else navigate("/#trayectoria");
+            }}>
+              <span>Trayectoria & Servicios</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                <path d="M15 19l2 2l4 -4"></path>
+              </svg>
+            </ButtonMobileMenuStyled>
           </>
         )}
       </ContainerMobileMenuStyled>

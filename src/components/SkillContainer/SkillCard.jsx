@@ -5,11 +5,11 @@ const SkillCard = ({img, lazy, name, skill, colorData}) => {
   return (
     <ContainerCardStyled>
         <BackgroundColorCardStyled>
-            <img src={img} alt="" />
+            <img loading="lazy" decoding="async" src={img} alt="" />
         </BackgroundColorCardStyled>
         <InfoCardStyled>
             <FigureColorStyled colorsData={colorData}>
-              <img src={lazy} alt="" />
+              <img loading="lazy" decoding="async" src={lazy} alt="" />
             </FigureColorStyled>
             <div>
                 <span>{name}</span>

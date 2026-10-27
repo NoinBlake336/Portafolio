@@ -7,7 +7,6 @@ import {
 import Layout from "../components/Layout/Layout";
 import Home from "../pages/Home/Home";
 import Project from "../pages/Project/Project";
-import Services from "../pages/Services/Services";
 
 const Routes = () => {
   return (
@@ -16,9 +15,8 @@ const Routes = () => {
         <ReactDomRouter>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path=":project" element={<Project />} />
+            <Route path=":kind/:slug" element={<Project />} />
           </Route>
-          <Route path="services" element={<Services />}></Route>
         </ReactDomRouter>
       </Layout>
     </BrowserRouter>

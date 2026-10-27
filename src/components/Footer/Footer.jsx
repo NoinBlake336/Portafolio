@@ -15,9 +15,9 @@ const Footer = () => {
                 {
                   isTranslate 
                   ?      
-                  <p>© 2024 NoinDev. All rights reserved.</p>
-                  : 
                   <p>© 2024 NoinDev. Todos los derechos reservados.</p>
+                  : 
+                  <p>© 2024 NoinDev. All rights reserved.</p>
                 }
             </AllRigthReservationsStyled>
         </PrincipalStyled>

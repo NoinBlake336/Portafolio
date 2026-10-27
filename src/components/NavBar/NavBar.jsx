@@ -28,19 +28,20 @@ const NavBar = () => {
           <ItemsStyled onClick={() => navigate("/")}>
             {!isTranslate ? <span>Home</span> : <span>Inicio</span>}
           </ItemsStyled>
-          {/* <ItemsStyled onClick={()=> navigate('/services')}>
-                    {
-                        !isTranslate ? 
-                        <span>
-                            Services
-                        </span> 
-                        :
-                        <span>
-                            Servicios
-                        </span>
-                    }
-
-                </ItemsStyled>    */}
+          <ItemsStyled onClick={() => {
+            const el = document.getElementById("proyectos");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+            else navigate("/#proyectos");
+          }}>
+            {!isTranslate ? <span>Projects</span> : <span>Proyectos</span>}
+          </ItemsStyled>
+          <ItemsStyled onClick={() => {
+            const el = document.getElementById("trayectoria");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+            else navigate("/#trayectoria");
+          }}>
+            {!isTranslate ? <span>Services & Career</span> : <span>Trayectoria & Servicios</span>}
+          </ItemsStyled>
         </NavigateContainerStyled>
       </ContainerLogoStyled>
       <Links />

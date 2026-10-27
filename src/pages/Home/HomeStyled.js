@@ -6,8 +6,8 @@ export const ContainerSectionStyled = styled.section`
   align-items: center;
   width: 100%;
   flex-direction: column;
-  height: 100vh;
-  padding: 0 1.5rem;
+  min-height: 100vh;
+  padding: 6rem 1.5rem 5rem;
   position: relative;
 `;
 
@@ -26,7 +26,8 @@ export const SectionPrincipalStyled = styled.div`
     font-size: 1.025rem;
     font-weight: 500;
     color: var(--text-accent);
-    line-height: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -72,34 +73,53 @@ export const SectionPrincipalStyled = styled.div`
 `;
 
 export const ContainerButtonsStyled = styled.div`
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.65rem;
+  width: 100%;
+
+  @media (max-width: 579px) {
+    a {
+      flex: 1 1 calc(50% - 0.65rem);
+    }
+    a:first-child {
+      flex-basis: 100%;
+    }
+  }
 `;
 
 export const ButtonStyled = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 0.4rem;
   cursor: pointer;
   text-decoration: none;
-  color: var(--landing-message-color);
-  padding: 0.4rem 1.3rem;
-  background-color: var(--landing-action-background-color);
+  color: ${({ $primary }) => ($primary ? "#000" : "var(--landing-message-color)")};
+  padding: 0.5rem 1.35rem;
+  background-color: ${({ $primary }) => ($primary ? "var(--text-accent)" : "var(--landing-action-background-color)")};
   border: 0.1rem solid var(--landing-action-color);
   border-radius: 50px;
-  min-height: 2.25rem;
+  min-height: 2.35rem;
+  font-weight: ${({ $primary }) => ($primary ? "600" : "400")};
+  transition: all 0.25s ease;
+  box-shadow: ${({ $primary }) => ($primary ? "0 4px 18px rgba(254, 236, 182, 0.35)" : "none")};
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: ${({ $primary }) => ($primary ? "#fff" : "rgba(254, 236, 182, 0.25)")};
+    box-shadow: 0 6px 20px rgba(254, 236, 182, 0.3);
+  }
+
   svg {
-    width: 1.325rem;
-    height: 1.325rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
   span {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.95rem;
   }
 `;
 

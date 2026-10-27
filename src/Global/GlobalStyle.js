@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     *{
         margin: 0;
@@ -41,5 +40,35 @@ export const GlobalStyle = createGlobalStyle`
         --skills-skill-type-color: #b4b4 b;
         --skills-skill-description-color: #ff;
         --footer-content-color: #cebfbf;
+    }
+
+    /* Proteccion contra impresion / exportar a PDF */
+    @media print {
+        html, body {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    }
+
+    /* Proteccion contra capturas de pantalla / snipping tools al perder foco de ventana */
+    body.anti-screenshot-active .protected-design-image,
+    body.anti-screenshot-active .watermark-container,
+    body.anti-screenshot-active .protected-design-modal img {
+        filter: blur(35px) brightness(0.2) !important;
+        opacity: 0.1 !important;
+        transition: filter 0.05s ease, opacity 0.05s ease;
+    }
+
+    /* Deshabilitar arrastre y seleccion de imagenes protegidas */
+    .protected-design-image,
+    .protected-design-modal img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
     }
 `;

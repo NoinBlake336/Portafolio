@@ -5,10 +5,10 @@ export const ContainerTitleStyled = styled.header`
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+    margin-top: 3rem;
     span {
-        font-size: 2.5rem;
+        font-size: clamp(1.6rem, 5vw, 2.5rem);
         font-weight: 500;
     }
     svg {

@@ -1,8 +1,126 @@
 import LogoMongo from "../assets/mg.svg";
+import LogoBotAi from "../assets/botAi.svg";
+import LogoTelegram from "../assets/telegram.svg";
 export const projectsDataEn = [
+  {
+    link: "", // en desarrollo activo
+    img: require("../assets/chiarottinTransporte.png"),
+    desktopImg: require("../assets/chiarottinTransporte.png"),
+    span: "Logística & Tracking en Vivo",
+    title: "TRANSPORTE CHIAROTTIN",
+    description:
+      "Plataforma integral de logística, gestión de comisiones y seguimiento en tiempo real para comisionistas y transporte de cargas. Permite a los clientes rastrear minuto a minuto el estado y la ubicación de sus pedidos a lo largo de las rutas (entre Córdoba Capital y Jesús María / Ruta 9 Norte), gestión de remitos, depósitos y cobros. Desarrollado con WebSockets para geolocalización y trazabilidad en vivo (actualmente en fase activa de desarrollo).",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/ts.png"),
+    ],
+    skillsName: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "TypeScript",
+      "WebSocket",
+      "TailwindCSS",
+    ],
+    isRecent: false,
+    inDevelopment: true,
+  },
+  {
+    link: "",
+    img: require("../assets/botTelegram.jpeg"),
+    desktopImg: require("../assets/botTelegram.jpeg"),
+    span: "DevOps & Bot de Monitoreo con IA",
+    title: "TELEGRAM MONITOR & AUDIT BOT",
+    bg: "#0e1621",
+    description:
+      "Bot de automatización, diagnóstico y administración para Telegram con conexión remota directa a la PC y servidores. Cuenta con análisis inteligente de errores del sistema mediante IA, detección temprana de incidencias, canal de avisos de emergencias reportadas por usuarios en tiempo real, y un módulo integral de auditoría continua que registra accesos, operaciones y sesiones de usuarios para control y seguridad operativa.",
+    skills: [
+      LogoTelegram,
+      LogoBotAi,
+      require("../assets/njs.png"),
+      require("../assets/ts.png"),
+      require("../assets/postgresql.png"),
+    ],
+    skillsName: [
+      "Telegram Bot API",
+      "Inteligencia Artificial (IA)",
+      "NodeJS / NestJS",
+      "TypeScript",
+      "Auditoría de Usuarios",
+      "DevOps & Monitoreo",
+      "PostgreSQL",
+    ],
+    isRecent: true,
+  },
+  {
+    link: "",
+    img: require("../assets/ventryx.png"),
+    desktopImg: require("../assets/ventryx.png"),
+    mobileImg: require("../assets/mobileventryx.jpeg"),
+    span: "Sistema ERP & App Móvil",
+    title: "VENTRYX",
+    description:
+      "Ventryx es un sistema integral de gestión administrativa y contable desarrollado para empresas, distribuidoras y comercios. Incluye facturación electrónica conectada con ARCA (AFIP), gestión completa de ventas y compras, control avanzado de inventario con soporte para paquetes y unidades, múltiples depósitos, cuentas corrientes, reportes financieros y una aplicación móvil complementaria con escáner de códigos de barras y sincronización en tiempo real mediante WebSockets. Además, incorpora un asistente interactivo inteligente integrado (bot con IA) que guía y asiste a los usuarios paso a paso sobre el funcionamiento y uso de cada módulo del sistema.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/ts.png"),
+      LogoBotAi,
+    ],
+    skillsName: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "TypeScript",
+      "WebSocket",
+      "ARCA (AFIP)",
+      "React Native",
+      "Bot Asistente con IA",
+    ],
+    isRecent: true,
+  },
+  {
+    link: "https://camaraempresarialjmys.org.ar/",
+    img: require("../assets/paginaCamara.png"),
+    desktopImg: require("../assets/paginaCamara.png"),
+    mobileImg: require("../assets/mobileCamara.png"),
+    span: "Web Institucional & Socios",
+    title: "CÁMARA EMPRESARIAL",
+    description:
+      "Plataforma web institucional y portal de socios para la Cámara Empresarial de Jesús María y Sinsacate. Permite a las empresas y socios asociados acceder a beneficios exclusivos, gestionar trámites y acceder al portal privado de autogestión de socios con autenticación segura y notificaciones en tiempo real vía WebSockets, disponible tanto en versión web de escritorio como en interfaz móvil optimizada.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/Td.png"),
+    ],
+    skillsName: ["React", "NestJS", "PostgreSQL", "TailwindCSS", "WebSocket"],
+    isRecent: true,
+  },
+  {
+    link: "", // si no tiene dominio aún, podés dejar "#"
+    img: require("../assets/grupomarron.png"),
+    desktopImg: require("../assets/grupomarron.png"),
+    span: "Landing Page & Catálogo Editable",
+    title: "GRUPO MARRÓN",
+    description:
+      "Sitio web institucional y catálogo digital autoadministrable desarrollado para Grupo Marrón (fábrica de muebles y diseño de interiores). Cuenta con una arquitectura donde la empresa puede actualizar y cargar toda su información corporativa, colecciones y catálogo completo de productos con imágenes y especificaciones, integrando canales de consulta directa por WhatsApp.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/Td.png"),
+    ],
+    skillsName: ["React", "NestJS", "PostgreSQL", "TailwindCSS"],
+    isRecent: true,
+  },
   {
     link: "", // si no tiene dominio aún, podés dejar "#"
     img: require("../assets/ketush.png"), // reemplazá con la captura del sistema
+    desktopImg: require("../assets/ketush.png"),
     span: "Sistema de Gestión ERP",
     title: "FERRETERÍA SYSTEM",
     description:
@@ -18,6 +136,7 @@ export const projectsDataEn = [
   {
     link: "https://bosquesrl.com/", // si no tiene dominio, podés dejarlo vacío o poner "#"
     img: require("../assets/bosqueSrlSystem.png"), // reemplazá con la captura del sistema
+    desktopImg: require("../assets/bosqueSrlSystem.png"),
     span: "Sistema de Gestión",
     title: "BOSQUE SRL",
     description:
@@ -30,16 +149,6 @@ export const projectsDataEn = [
     skillsName: ["NestJS", "React", "PostgreSQL"],
   },
   {
-    link: "https://mateosapart.com/",
-    img: require("../assets/mateosApartPage.png"), // Imagen de ejemplo
-    span: "Landing Page",
-    title: "MATEOS APART",
-    description:
-      "Mateos Apart es una plataforma diseñada para facilitar el alquiler de departamentos, ofreciendo una experiencia intuitiva y fluida para los usuarios. Desarrollada con React, garantiza una interfaz dinámica, moderna y adaptable a cualquier dispositivo, brindando comodidad y accesibilidad.",
-    skills: [require("../assets/astro.png"), require("../assets/js.png")], // Ejemplo de skills
-    skillsName: ["Astro"],
-  },
-  {
     link: "https://citaconlavida.vercel.app/",
     img: require("../assets/radioamistad.png"), // Imagen de ejemplo
     span: "Landing Page",
@@ -50,19 +159,21 @@ export const projectsDataEn = [
     skillsName: ["react", "javascript"],
   },
   {
-    link: "https://casa-plus-ok.com",
+    link: "https://casa-plus-web.vercel.app/",
     img: require("../assets/casaPlus.png"),
-    span: "Full Stack",
+    desktopImg: require("../assets/casaPlus.png"),
+    mobileImg: require("../assets/mobileCasaPlus.png"),
+    span: "E-Commerce & Mobile",
     title: "CASA PLUS | BAZAR",
     description:
-      "La desmostración de este proyecto consiste en la presentación de una tienda online creada específicamente para Casa Plus, un local comercial dedicado a la venta de productos de bazar. Este sitio web está diseñado para facilitar la exhibición y venta de una amplia gama de artículos de bazar, que incluyen utensilios de cocina, decoración, artículos para el hogar, entre otros productos útiles para diversas tareas cotidianas.",
+      "Tienda online y catálogo interactivo desarrollado para Casa Plus, local comercial dedicado a artículos de bazar y el hogar. Diseñado con una experiencia de compra fluida y optimizada tanto para escritorio como para dispositivos móviles.",
     skills: [
       require("../assets/ts.png"),
       require("../assets/react.png"),
       require("../assets/njs.png"),
       LogoMongo,
     ],
-    skillsName: ["typescript", "javascript", "nestjs", "mongodb"],
+    skillsName: ["React", "TypeScript", "NestJS", "MongoDB"],
   },
   {
     link: "https://www.ipetym69.edu.ar",
@@ -76,7 +187,7 @@ export const projectsDataEn = [
       require("../assets/js.png"),
       require("../assets/CSS.png"),
     ],
-    skillsName: ["html", "javascript", "css"],
+    skillsName: ["HTML", "JavaScript", "CSS"],
   },
   {
     link: "https://glam-haven.vercel.app/",
@@ -91,127 +202,215 @@ export const projectsDataEn = [
       require("../assets/CSS.png"),
       require("../assets/js.png"),
     ],
-    skillsName: ["html", "tailwindCss", "css", "javascript"],
-  },
-  {
-    link: "https://chat-websocket-ryky.onrender.com",
-    img: require("../assets/projectBackendTwo.png"),
-    span: "Backend",
-    title: "CHAT API",
-    description:
-      "Chat API es una poderosa herramienta de backend que gestiona toda la información necesaria para un sistema de chat completo. Desde el almacenamiento de mensajes de chat hasta la administración de usuarios y listas de amigos, Chat API proporciona una base sólida para crear aplicaciones de chat interactivas y seguras.",
-    skills: [
-      require("../assets/node.png"),
-      require("../assets/ex.png"),
-      LogoMongo,
-    ],
-    skillsName: ["nodeJs", "express", "mongodb"],
-  },
-  {
-    link: "https://api-weather-sepia.vercel.app",
-    img: require("../assets/projectsThree.png"),
-    span: "Landing Page",
-    title: "WEATHER APP",
-    description:
-      "Weather App es una página web que proporciona información meteorológica actualizada al hacer fetch a una API de clima. Con una interfaz intuitiva, los usuarios pueden buscar el país de su elección y obtener detalles sobre el clima en tiempo real.",
-    skills: [
-      require("../assets/html.png"),
-      require("../assets/CSS.png"),
-      require("../assets/js.png"),
-    ],
-    skillsName: ["html", "css", "javascript"],
+    skillsName: ["HTML", "TailwindCSS", "JavaScript"],
   },
 ];
 export const designsEn = [
   {
     link: "",
+    img: require("../assets/design/chiarottin.png"),
+    images: [
+      require("../assets/design/chiarottin.png"),
+      require("../assets/design/isologo_chiarottin.png"),
+    ],
+    imageLabels: ["Isotipo / Logo", "Isologo Completo"],
+    span: "Identidad & Branding",
+    title: "TRANSPORTE CHIAROTTIN",
+    description:
+      "Desarrollo de identidad visual corporativa, diseño de logotipo e isologo para la empresa Transporte Chiarottin. Se diseñó una estética moderna, ágil y sólida que transmite velocidad, profesionalismo y confianza en el rubro logístico.",
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding", "Identidad Visual"],
+    bg: "#0b6b38",
+    isRecent: true,
+    isDesign: true,
+  },
+  {
+    link: "",
     img: require("../assets/design/piel.jpg"),
-    span: "Logo",
+    images: [
+      require("../assets/design/piel.jpg"),
+      require("../assets/design/portada-piel.jpg"),
+    ],
+    imageLabels: ["Logo Principal", "Portada / Cover"],
+    span: "Identidad & Branding",
     title: "PIEL MORENA",
     description:
-      "El logo de Piel Morena transmite calidez y vitalidad con un diseño elegante que incorpora elementos naturales. Invita a explorar el bazar con una sensación acogedora y moderna.",
+      "Identidad visual y diseño corporativo para Piel Morena. Transmite calidez y vitalidad con una composición equilibrada y elegante que incorpora elementos naturales, invitando a explorar la marca con una sensación acogedora y moderna.",
     skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
+    skillsName: ["Illustrator", "Branding", "Identidad Visual"],
+    isDesign: true,
   },
   {
     link: "",
     img: require("../assets/design/tabicas (1).jpg"),
-    span: "Logo",
+    images: [
+      require("../assets/design/tabicas (1).jpg"),
+      require("../assets/design/tabicas (2).jpg"),
+    ],
+    imageLabels: ["Variante 1", "Variante 2"],
+    span: "Identidad & Logo",
     title: "TABITAS DORCAS",
     description:
-      "Tabicas Dorcas es una marca especializada en arreglos de prendas y bordados, donde la artesanía y la atención al detalle son fundamentales.",
+      "Tabitas Dorcas es una marca especializada en arreglos de prendas y bordados, donde la artesanía, precisión y la atención al detalle son fundamentales en su propuesta visual.",
     skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
-  },
-  {
-    link: "",
-    img: require("../assets/design/tabicas (2).jpg"),
-    span: "Logo",
-    title: "TABITAS DORCAS 2",
-    description:
-      "Tabicas Dorcas es una marca especializada en arreglos de prendas y bordados, donde la artesanía y la atención al detalle son fundamentales.",
-    skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
-  },
-  {
-    link: "",
-    img: require("../assets/design/portada-piel.jpg"),
-    span: "Cover",
-    title: "PIEL MORENA 2",
-    description:
-      "El cover de Piel Morena transmite calidez y vitalidad con un diseño elegante que incorpora elementos naturales. Invita a explorar el bazar con una sensación acogedora y moderna.",
-    skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
+    skillsName: ["Illustrator", "Diseño de Logo"],
+    isDesign: true,
   },
   {
     link: "https://mateosapart.com/",
-    img: require("../assets/design/mateosApart(1).png"), // Cambia la ruta según corresponda
-    span: "Logo",
-    title: "Mateos Apart",
+    img: require("../assets/design/mateosApart(1).png"),
+    images: [
+      require("../assets/design/mateosApart(1).png"),
+      require("../assets/design/mateosApart(2).png"),
+    ],
+    imageLabels: ["Isotipo", "Isologo Completo"],
+    span: "Identidad & Logo",
+    title: "MATEOS APART",
     description:
       "El logo de Mateos Apart representa la comodidad y elegancia de los departamentos en alquiler por noche. Con un diseño moderno y minimalista, evoca una sensación de tranquilidad y exclusividad para los huéspedes.",
-    skills: [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
-    skillsName: ["Illustrator"],
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding"],
     bg: "#c19e6a",
-  },
-  {
-    link: "https://mateosapart.com/",
-    img: require("../assets/design/mateosApart(2).png"), // Cambia la ruta según corresponda
-    span: "Logo",
-    title: "Mateos Apart 2",
-    description:
-      "El logo de Mateos Apart representa la comodidad y elegancia de los departamentos en alquiler por noche. Con un diseño moderno y minimalista, evoca una sensación de tranquilidad y exclusividad para los huéspedes.",
-    skills: [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
-    skillsName: ["Illustrator"],
-    bg: "#c19e6a",
+    isDesign: true,
   },
   {
     link: "",
-    img: require("../assets/design/Pintureria.png"), // Cambia la ruta según corresponda
-    span: "Logo",
-    title: "Gonzalez Pintura",
+    img: require("../assets/design/Pintureria.png"),
+    images: [
+      require("../assets/design/Pintureria.png"),
+      require("../assets/design/presentationCardGP.png"),
+    ],
+    imageLabels: ["Logo Corporativo", "Tarjeta de Presentación"],
+    span: "Identidad & Branding",
+    title: "GONZALEZ PINTURA",
     description:
-      "El logo de Gonzalez Pintura representa la calidad y profesionalismo en el servicio de pintura y decoración para casas residenciales. Con un diseño atractivo y representativo, transmite confianza y compromiso con el embellecimiento del hogar.",
-    skills: [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
-    skillsName: ["Illustrator"],
+      "Identidad corporativa y piezas de presentación desarrolladas para Gonzalez Pintura. Incluye isotipo y diseño de papelería profesional, transmitiendo confianza y compromiso con el embellecimiento del hogar.",
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding", "Diseño Editorial"],
     bg: "white",
-  },
-  {
-    link: "",
-    img: require("../assets/design/presentationCardGP.png"), // Cambia la ruta según corresponda
-    span: "Carta de presentación",
-    title: "Gonzalez Pintura 2",
-    description:
-      "El diseño de la carta de presentación de Gonzalez Pintura es moderno y profesional, resaltando su identidad visual. Usa colores armoniosos que transmiten confianza, con una tipografía clara y equilibrando texto e imagen para una comunicación efectiva. El logo destaca, reforzando la identidad de la marca.",
-    skills: [require("../assets/il.png")], // Cambia si usas otro ícono para Illustrator
-    skillsName: ["Illustrator"],
-    bg: "",
+    isDesign: true,
   },
 ];
 export const projectsDataEs = [
   {
+    link: "", // in active development
+    img: require("../assets/chiarottinTransporte.png"),
+    desktopImg: require("../assets/chiarottinTransporte.png"),
+    span: "Logistics & Live Tracking",
+    title: "TRANSPORTE CHIAROTTIN",
+    description:
+      "Comprehensive logistics platform, commission management, and real-time package tracking system for freight and commission agents. Enables clients to track shipment status and route progress live between Córdoba Capital and Ruta 9 Norte, managing dispatch notes, warehouse handling, and collections. Engineered with WebSockets for real-time tracking (currently in active development).",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/ts.png"),
+    ],
+    skillsName: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "TypeScript",
+      "WebSocket",
+      "TailwindCSS",
+    ],
+    isRecent: false,
+    inDevelopment: true,
+  },
+  {
+    link: "",
+    img: require("../assets/botTelegram.jpeg"),
+    desktopImg: require("../assets/botTelegram.jpeg"),
+    span: "DevOps & AI Monitoring Bot",
+    title: "TELEGRAM MONITOR & AUDIT BOT",
+    bg: "#0e1621",
+    description:
+      "Telegram automation and administration bot with direct remote connection to PC and server infrastructure. Features AI-powered system error analysis and proactive troubleshooting, real-time emergency alert dispatch from end-users, and a continuous audit logging engine tracking user sessions, commands, and operational events for enterprise-grade security and reliability.",
+    skills: [
+      LogoTelegram,
+      LogoBotAi,
+      require("../assets/njs.png"),
+      require("../assets/ts.png"),
+      require("../assets/postgresql.png"),
+    ],
+    skillsName: [
+      "Telegram Bot API",
+      "Artificial Intelligence (AI)",
+      "NodeJS / NestJS",
+      "TypeScript",
+      "User Auditing",
+      "DevOps & Remote Monitoring",
+      "PostgreSQL",
+    ],
+    isRecent: true,
+  },
+  {
+    link: "https://ventryx.app/",
+    img: require("../assets/ventryx.png"),
+    desktopImg: require("../assets/ventryx.png"),
+    mobileImg: require("../assets/mobileventryx.jpeg"),
+    span: "ERP System & Mobile App",
+    title: "VENTRYX",
+    description:
+      "Ventryx is a comprehensive administrative and accounting ERP system developed for businesses, distributors, and retail stores. Features electronic invoicing integrated with ARCA (AFIP), complete sales and purchase management, advanced inventory tracking with support for packages and units, multi-warehouse handling, accounts receivable/payable, financial reports, and a companion mobile app with barcode scanning and real-time synchronization powered by WebSockets. Additionally, it integrates an intelligent interactive assistant (AI Bot) that guides users step-by-step on navigating and utilizing every feature of the ERP system.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/ts.png"),
+      LogoBotAi,
+    ],
+    skillsName: [
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "TypeScript",
+      "WebSocket",
+      "ARCA (AFIP)",
+      "React Native",
+      "AI Assistant (Bot)",
+    ],
+    isRecent: true,
+  },
+  {
+    link: "https://camaraempresarialjmys.org.ar/",
+    img: require("../assets/paginaCamara.png"),
+    desktopImg: require("../assets/paginaCamara.png"),
+    mobileImg: require("../assets/mobileCamara.png"),
+    span: "Institutional Web & Member Portal",
+    title: "CÁMARA EMPRESARIAL",
+    description:
+      "Institutional web platform and member portal for the Chamber of Commerce of Jesús María and Sinsacate. Allows associated businesses and members to access exclusive benefits, manage paperwork, and access the private self-management portal with secure authentication and real-time updates via WebSockets, available both in desktop web view and mobile-optimized interface.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/Td.png"),
+    ],
+    skillsName: ["React", "NestJS", "PostgreSQL", "TailwindCSS", "WebSocket"],
+    isRecent: true,
+  },
+  {
+    link: "",
+    img: require("../assets/grupomarron.png"),
+    desktopImg: require("../assets/grupomarron.png"),
+    span: "Self-Managed Landing Page & Catalog",
+    title: "GRUPO MARRÓN",
+    description:
+      "Corporate web platform and self-managed digital catalog developed for Grupo Marrón (custom furniture manufacturing and interior design). Engineered with a management back-office where the business can easily update company information, showcase collections, and publish products with rich visuals and specifications, driving direct customer inquiries via WhatsApp.",
+    skills: [
+      require("../assets/react.png"),
+      require("../assets/njs.png"),
+      require("../assets/postgresql.png"),
+      require("../assets/Td.png"),
+    ],
+    skillsName: ["React", "NestJS", "PostgreSQL", "TailwindCSS"],
+    isRecent: true,
+  },
+  {
     link: "", // if there's no domain yet, you can leave "#"
     img: require("../assets/ketush.png"), // replace with the system screenshot
+    desktopImg: require("../assets/ketush.png"),
     span: "ERP Management System",
     title: "HARDWARE STORE SYSTEM",
     description:
@@ -227,6 +426,7 @@ export const projectsDataEs = [
   {
     link: "https://bosquesrl.com/", // if there's no domain, you can leave it empty or use "#"
     img: require("../assets/bosqueSrlSystem.png"), // replace with the system screenshot
+    desktopImg: require("../assets/bosqueSrlSystem.png"),
     span: "Management System",
     title: "BOSQUE SRL",
     description:
@@ -237,17 +437,6 @@ export const projectsDataEs = [
       require("../assets/postgresql.png"),
     ],
     skillsName: ["NestJS", "React", "PostgreSQL"],
-  },
-
-  {
-    link: "https://mateosapart.com/",
-    img: require("../assets/mateosApartPage.png"), // Imagen de ejemplo
-    span: "Landing Page",
-    title: "MATEOS APART",
-    description:
-      "Mateos Apart is a platform designed to facilitate apartment rentals, offering an intuitive and seamless experience for users. Developed with React, it ensures a dynamic, modern, and responsive interface, providing convenience and accessibility.",
-    skills: [require("../assets/astro.png"), require("../assets/js.png")], // Ejemplo de skills
-    skillsName: ["Astro"],
   },
   {
     link: "https://citaconlavida.vercel.app/",
@@ -260,19 +449,21 @@ export const projectsDataEs = [
     skillsName: ["react", "javascript"],
   },
   {
-    link: "https://casa-plus-ok.com",
+    link: "https://casa-plus-web.vercel.app/",
     img: require("../assets/casaPlus.png"),
-    span: "full stack",
+    desktopImg: require("../assets/casaPlus.png"),
+    mobileImg: require("../assets/mobileCasaPlus.png"),
+    span: "E-Commerce & Mobile",
     title: "CASA PLUS | BAZAR",
     description:
-      "The demonstration of this project consists of the presentation of an online store created specifically for Casa Plus, a retail business dedicated to selling bazaar products. This website is designed to facilitate the display and sale of a wide variety of bazaar items, including kitchen utensils, decorations, household products, and other useful items for various daily tasks.",
+      "Online store and interactive digital catalog developed for Casa Plus, a retail business specializing in bazaar and household goods. Designed with a smooth checkout experience optimized for both desktop and mobile devices.",
     skills: [
       require("../assets/ts.png"),
       require("../assets/react.png"),
       require("../assets/njs.png"),
       LogoMongo,
     ],
-    skillsName: ["typescript", "javascript", "nestjs", "mongodb"],
+    skillsName: ["React", "TypeScript", "NestJS", "MongoDB"],
   },
   {
     link: "https://www.ipetym69.edu.ar",
@@ -286,7 +477,7 @@ export const projectsDataEs = [
       require("../assets/js.png"),
       require("../assets/CSS.png"),
     ],
-    skillsName: ["html", "javascript", "css"],
+    skillsName: ["HTML", "JavaScript", "CSS"],
   },
   {
     link: "https://glam-haven.vercel.app/",
@@ -301,120 +492,92 @@ export const projectsDataEs = [
       require("../assets/CSS.png"),
       require("../assets/js.png"),
     ],
-    skillsName: ["html", "tailwindCss", "css", "javascript"],
-  },
-  {
-    link: "https://chat-websocket-ryky.onrender.com/",
-    img: require("../assets/projectBackendTwo.png"),
-    span: "Backend",
-    title: "CHAT API",
-    description:
-      "Chat API is a powerful backend tool that manages all the necessary information for a complete chat system. From storing chat messages to managing users and friend lists, Chat API provides a solid foundation for creating interactive and secure chat applications.",
-    skills: [
-      require("../assets/node.png"),
-      require("../assets/ex.png"),
-      LogoMongo,
-    ],
-    skillsName: ["nodeJs", "express", "mongodb"],
-  },
-  {
-    link: "https://api-weather-sepia.vercel.app",
-    img: require("../assets/projectsThree.png"),
-    span: "Landing Page",
-    title: "WEATHER APP",
-    description:
-      "Weather App is a web page that provides updated weather information by fetching from a weather API. With an intuitive interface, users can search for the country of their choice and get real-time weather details.",
-    skills: [
-      require("../assets/html.png"),
-      require("../assets/CSS.png"),
-      require("../assets/js.png"),
-    ],
-    skillsName: ["html", "css", "javascript"],
+    skillsName: ["HTML", "TailwindCSS", "JavaScript"],
   },
 ];
 export const designsEs = [
   {
     link: "",
+    img: require("../assets/design/chiarottin.png"),
+    images: [
+      require("../assets/design/chiarottin.png"),
+      require("../assets/design/isologo_chiarottin.png"),
+    ],
+    imageLabels: ["Logo", "Full Isologo"],
+    span: "Brand Identity & Logo",
+    title: "TRANSPORTE CHIAROTTIN",
+    description:
+      "Comprehensive visual identity, logo, and isologo design for Transporte Chiarottin. Crafted with a dynamic aesthetic to convey speed, trust, and solid professionalism in logistics and freight services.",
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding", "Graphic Design"],
+    bg: "#0b6b38",
+    isRecent: true,
+    isDesign: true,
+  },
+  {
+    link: "",
     img: require("../assets/design/piel.jpg"),
-    span: "Logo",
+    images: [
+      require("../assets/design/piel.jpg"),
+      require("../assets/design/portada-piel.jpg"),
+    ],
+    imageLabels: ["Primary Logo", "Cover / Header"],
+    span: "Brand Identity",
     title: "PIEL MORENA",
     description:
-      "The Piel Morena logo conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.",
+      "Visual brand identity for Piel Morena. Conveys warmth and vitality with an elegant design incorporating organic elements, inviting customers to discover the brand with a modern and welcoming feel.",
     skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
+    skillsName: ["Illustrator", "Branding", "Visual Identity"],
+    isDesign: true,
   },
   {
     link: "",
     img: require("../assets/design/tabicas (1).jpg"),
-    span: "Logo",
+    images: [
+      require("../assets/design/tabicas (1).jpg"),
+      require("../assets/design/tabicas (2).jpg"),
+    ],
+    imageLabels: ["Variant 1", "Variant 2"],
+    span: "Logo & Identity",
     title: "TABITAS DORCAS",
     description:
-      "Tabicas Dorcas is a brand specializing in garment alterations and embroidery, where craftsmanship and attention to detail are essential.",
+      "Tabitas Dorcas is a boutique brand specializing in tailored garment repairs and embroidery, where craftsmanship, precision, and detail are paramount.",
     skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
-  },
-  {
-    link: "",
-    img: require("../assets/design/tabicas (2).jpg"),
-    span: "Logo",
-    title: "TABITAS DORCAS 2",
-    description:
-      "Tabicas Dorcas is a brand specializing in garment alterations and embroidery, where craftsmanship and attention to detail are essential.",
-    skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
-  },
-  {
-    link: "",
-    img: require("../assets/design/portada-piel.jpg"),
-    span: "Cover",
-    title: "PIEL MORENA 2",
-    description:
-      "The Piel Morena cover conveys warmth and vitality with an elegant design that incorporates natural elements. It invites exploration of the bazaar with a cozy and modern feel.",
-    skills: [require("../assets/il.png")],
-    skillsName: ["illustrator"],
+    skillsName: ["Illustrator", "Logo Design"],
+    isDesign: true,
   },
   {
     link: "https://mateosapart.com/",
-    img: require("../assets/design/mateosApart(1).png"), // Adjust the path as needed
-    span: "Logo",
-    title: "Mateos Apart",
+    img: require("../assets/design/mateosApart(1).png"),
+    images: [
+      require("../assets/design/mateosApart(1).png"),
+      require("../assets/design/mateosApart(2).png"),
+    ],
+    imageLabels: ["Isotype", "Full Isologo"],
+    span: "Brand & Logo",
+    title: "MATEOS APART",
     description:
-      "The logo of Mateos Apart reflects the comfort and elegance of the apartments available for nightly rental. With a modern and minimalist design, it conveys a sense of tranquility and exclusivity for the guests.",
-    skills: [require("../assets/il.png")], // Adjust if you use a different icon for Illustrator
-    skillsName: ["Illustrator"],
+      "Logo and brand mark for Mateos Apart representing comfort and elegance for short-term rental apartments. A sleek, minimalist aesthetic evoking serenity and premium hospitality.",
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding"],
     bg: "#c19e6a",
-  },
-  {
-    link: "https://mateosapart.com/",
-    img: require("../assets/design/mateosApart(2).png"), // Adjust the path as needed
-    span: "Logo",
-    title: "Mateos Apart 2",
-    description:
-      "The logo of Mateos Apart reflects the comfort and elegance of the apartments available for nightly rental. With a modern and minimalist design, it conveys a sense of tranquility and exclusivity for the guests.",
-    skills: [require("../assets/il.png")], // Adjust if you use a different icon for Illustrator
-    skillsName: ["Illustrator"],
-    bg: "#c19e6a",
+    isDesign: true,
   },
   {
     link: "",
-    img: require("../assets/design/Pintureria.png"), // Adjust the path accordingly
-    span: "Logo",
-    title: "Gonzalez Painting",
+    img: require("../assets/design/Pintureria.png"),
+    images: [
+      require("../assets/design/Pintureria.png"),
+      require("../assets/design/presentationCardGP.png"),
+    ],
+    imageLabels: ["Corporate Logo", "Business Card"],
+    span: "Brand Identity",
+    title: "GONZALEZ PAINTING",
     description:
-      "The Gonzalez Painting logo represents quality and professionalism in residential painting and decoration services. With an attractive and representative design, it conveys trust and commitment to enhancing the beauty of homes.",
-    skills: [require("../assets/il.png")], // Change if using a different icon for Illustrator
-    skillsName: ["Illustrator"],
+      "Corporate visual identity for Gonzalez Painting, featuring brand mark and business card layout. Conveys trust, high quality, and reliability in residential painting and decorating services.",
+    skills: [require("../assets/il.png")],
+    skillsName: ["Illustrator", "Branding", "Stationery Design"],
     bg: "white",
-  },
-  {
-    link: "",
-    img: require("../assets/design/presentationCardGP.png"), // Adjust the path accordingly
-    span: "Presentation Letter",
-    title: "Gonzalez Painting 2",
-    description:
-      "The design of Gonzalez Painting’s presentation letter is modern and professional, highlighting its visual identity. It uses harmonious colors that convey trust, with clear typography and a balanced layout for effective communication. The logo stands out, reinforcing the brand’s identity.",
-    skills: [require("../assets/il.png")], // Change if using a different icon for Illustrator
-    skillsName: ["Illustrator"],
-    bg: "whit",
+    isDesign: true,
   },
 ];

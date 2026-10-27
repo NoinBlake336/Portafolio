@@ -5,7 +5,7 @@ const AboutProfile = ({img}) => {
   return (
     <AboutMeFigureStyled>
         <ContianerImgStyled>
-            <img src={img} alt="" />
+            <img loading="lazy" decoding="async" src={img} alt="" />
         </ContianerImgStyled>
     </AboutMeFigureStyled>
   )

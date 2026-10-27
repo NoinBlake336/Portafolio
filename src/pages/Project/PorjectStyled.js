@@ -1,178 +1,379 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SectionContainerProjectStyled = styled.section`
-  width: 80%;
-  max-height: 100%;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-color: var(--text-accents);
-  padding: 1rem;
-  border-radius: 0.15rem;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 6rem 1rem 4rem;
+`;
 
-  @media (min-width: 1280px) {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
+export const BackLink = styled(Link)`
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--text-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
 
-  @media (min-width: 1280px) {
-    max-width: 1280px;
-  }
-  @media (min-width: 1024px) {
-    max-width: 1024px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media (min-width: 640px) {
-    max-width: 640px;
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
-export const ContainerImgStyled = styled.header`
-  max-width: 800px;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  @media (min-width: 1024px) {
-    gap: 1.5rem;
+export const ProjectHeader = styled.header`
+  margin-bottom: 1.25rem;
+
+  h1 {
+    color: var(--text-accent);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
   }
-  @media (min-width: 1024px) {
-    align-items: center;
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-  @media (min-width: 1024px) {
-    margin-top: 7rem;
+`;
+
+export const Badge = styled.span`
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: ${({ $tone }) => ($tone === "gold" ? "#facc15" : $tone === "blue" ? "#60a5fa" : "var(--text-accent)")};
+  background: ${({ $tone }) => ($tone === "gold" ? "rgba(234,179,8,.18)" : $tone === "blue" ? "rgba(59,130,246,.18)" : "rgba(254,236,182,.08)")};
+  border: 1px solid currentColor;
+`;
+
+export const ShowcaseToolbar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(18, 18, 18, 0.85);
+  border: 1px solid rgba(254, 236, 182, 0.25);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(10px);
+`;
+
+export const ShowcaseTabs = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+`;
+
+export const ShowcaseTabButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid ${({ $active }) => ($active ? 'var(--text-accent)' : 'rgba(255, 255, 255, 0.12)')};
+  background: ${({ $active }) => ($active ? 'var(--landing-action-background-color)' : 'rgba(255, 255, 255, 0.05)')};
+  color: ${({ $active }) => ($active ? 'var(--text-accent)' : 'rgba(255, 255, 255, 0.8)')};
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--text-accent);
+    background: rgba(254, 236, 182, 0.2);
+    border-color: rgba(254, 236, 182, 0.4);
   }
-  @media (min-width: 1024px) {
-    margin-bottom: 3rem;
-  }
+`;
+
+export const ShowcaseHint = styled.span`
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+`;
+
+export const BrowserFrame = styled.div`
+  background: #14171d;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(254, 236, 182, 0.08);
+  transition: all 0.3s ease;
+`;
+
+export const BrowserTitleBar = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: #0d0f13;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+`;
+
+export const BrowserDots = styled.div`
+  display: flex;
+  gap: 0.35rem;
+`;
+
+export const BrowserDot = styled.span`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: ${({ color }) => color || '#666'};
+  display: inline-block;
+`;
+
+export const BrowserUrlBar = styled.div`
+  flex: 1;
+  max-width: 420px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+`;
+
+export const BrowserImageContent = styled.div`
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  background-color: ${({ bg }) => (bg ? bg : '#0a0c10')};
 
   img {
-    background-color: ${({ bg }) => (bg ? bg : "transparent")};
-    border-radius: 0.5rem;
     width: 100%;
     height: auto;
-    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+`;
+
+export const PhoneWrapperCentered = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+`;
+
+export const PhoneFrame = styled.div`
+  width: 100%;
+  max-width: 320px;
+  background: #0d0f13;
+  border: 9px solid #1a1e24;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(254, 236, 182, 0.15);
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+`;
+
+export const PhoneNotch = styled.div`
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 16px;
+  background: #000;
+  border-radius: 10px;
+  z-index: 10;
+`;
+
+export const PhoneScreen = styled.div`
+  border-radius: 30px;
+  overflow: hidden;
+  background: #000;
+
+  img {
+    width: 100%;
     height: auto;
     display: block;
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    box-shadow: 1px 0px 23px 2px var(--landing-action-background-color);
-    @media (min-width: 1024px) {
-      margin-bottom: 2rem;
-    }
+    object-fit: cover;
+    box-shadow: none !important;
+    border-radius: 0 !important;
   }
 `;
 
-export const ContainerProjectAboutStyled = styled.div`
-  h1 {
-    --tw-text-opacity: 1;
-    color: var(--text-accent);
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    /* font-size: inherit; */
-    /* font-weight: inherit; */
-    @media (min-width: 1024px) {
-      margin-bottom: 1rem;
-    }
+export const PhoneHomeBar = styled.div`
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  z-index: 10;
+`;
 
-    @media (min-width: 1024px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+export const DualShowcase = styled.div`
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+
+  @media (min-width: 900px) {
+    padding-bottom: 2.5rem;
   }
 `;
 
-export const ContainerListOfSkillStyled = styled.ul`
-  align-items: flex-start;
-  list-style-type: none;
-  margin-bottom: 1rem;
-  list-style: none;
-  @media (min-width: 768px) {
-    gap: 2rem;
+export const DualPhoneOverlay = styled.div`
+  @media (min-width: 800px) {
+    position: absolute;
+    right: 1.5rem;
+    bottom: -1rem;
+    width: 250px;
+    z-index: 5;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.85));
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+  }
+
+  @media (max-width: 799px) {
+    margin-top: 1.5rem;
     display: flex;
+    justify-content: center;
   }
 `;
 
-export const SkillProjectStyled = styled.li`
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  gap: 0.25rem;
-  align-items: flex-start;
-  min-width: fit-content;
+export const LightboxOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: zoom-out;
+`;
 
-  svg {
-    --tw-text-opacity: 1;
-    color: var(--text-accent);
-    width: 1rem;
-    height: 1rem;
-    display: block;
-    vertical-align: middle;
+export const LightboxImageWrapper = styled.div`
+  position: relative;
+  max-width: 92vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
   }
+`;
+
+export const LightboxCloseButton = styled.button`
+  position: absolute;
+  top: -2.75rem;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--text-accent);
+  }
+`;
+
+export const GalleryStage = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 1rem;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  cursor: zoom-in;
+  background-color: ${({ bg }) => bg || "#0a0c10"};
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  img {
+    max-width: 100%;
+    max-height: 52vh;
+    object-fit: contain;
+  }
+`;
+
+export const InfoCard = styled.div`
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: rgba(18, 18, 18, 0.85);
+  border: 1px solid rgba(254, 236, 182, 0.18);
+  border-radius: 0.75rem;
+
+  h2 {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+
   p {
-    gap: 0.25rem;
-    flex-wrap: wrap;
-    display: flex;
+    line-height: 1.7;
+    color: #e2e8f0;
+    text-wrap: pretty;
   }
 `;
 
-export const ContainerPageLinkStyled = styled.div`
-  gap: 0.5rem;
+export const ActionGroup = styled.div`
   display: flex;
-  a {
-    --tw-text-opacity: 1;
-    color: var(--text-accent);
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.15s;
-    font-weight: 700;
-    gap: 0.25rem;
-    align-items: center;
-    display: flex;
-    text-decoration: inherit;
-    svg {
-      width: 1rem;
-      height: 1rem;
-    }
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+`;
+
+export const ActionLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: ${({ $primary }) => ($primary ? "#000" : "var(--text-primary)")};
+  background: ${({ $primary }) => ($primary ? "var(--text-accent)" : "var(--landing-action-background-color)")};
+  border: 1px solid var(--landing-action-color);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
   }
-`;
-
-export const ContainerBlockquoteStyled = styled.main`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
-`;
-
-export const BlockquoteStyled = styled.blockquote`
-  border-left: 5px solid hsla(0, 0%, 100%, 0.178);
-  padding-left: 1.5em;
-  --tw-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-opacity));
-  background-color: var(--landing-action-background-color);
-  text-wrap: pretty;
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
-    0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 0.375rem;
-  margin-bottom: 3rem;
 `;

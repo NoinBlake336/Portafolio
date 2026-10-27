@@ -11,7 +11,7 @@ const GlobalProvider = ({ children }) => {
     });
 
     return (
-        <GlobalContext.Provider value={globalState}>
+        <GlobalContext.Provider value={{ globalState, setGlobalState }}>
                 <TranslateProvider>
                     {children}
                 </TranslateProvider>

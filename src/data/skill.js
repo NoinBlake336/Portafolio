@@ -1,4 +1,5 @@
 import LogoMongo from '../assets/mg.svg';
+import LogoBotAi from '../assets/botAi.svg';
 export const skillData = [
     {
         id:13,
@@ -111,5 +112,13 @@ export const skillData = [
         name: "Adobe illustrator",
         skill: "Tools",
         color:'#7b3800'
+    },
+    {
+        id: 14,
+        img: LogoBotAi,
+        lazy: LogoBotAi,
+        name: "IA & Bots Integrados",
+        skill: "Tools",
+        color: '#0e2439'
     },
 ]
